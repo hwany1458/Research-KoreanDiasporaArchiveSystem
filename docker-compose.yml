@@ -1,0 +1,276 @@
+# ============================================
+# Korean Diaspora Archive System
+# Docker Compose Configuration
+# ============================================
+
+version: '3.8'
+
+services:
+  # ============================================
+  # API Server (FastAPI)
+  # ============================================
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: diaspora-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://diaspora:diaspora@db:5432/diaspora_archive
+      - REDIS_URL=redis://redis:6379/0
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - NEO4J_URL=bolt://neo4j:7687
+      - MINIO_ENDPOINT=minio:9000
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - db
+      - redis
+      - elasticsearch
+      - minio
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # Celery Worker (AI Processing)
+  # ============================================
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    container_name: diaspora-worker
+    command: celery -A src.api.celery_app worker --loglevel=info --concurrency=2
+    environment:
+      - DATABASE_URL=postgresql://diaspora:diaspora@db:5432/diaspora_archive
+      - REDIS_URL=redis://redis:6379/0
+      - CUDA_VISIBLE_DEVICES=0
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    depends_on:
+      - db
+      - redis
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # Celery Beat (Scheduler)
+  # ============================================
+  beat:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: diaspora-beat
+    command: celery -A src.api.celery_app beat --loglevel=info
+    environment:
+      - DATABASE_URL=postgresql://diaspora:diaspora@db:5432/diaspora_archive
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # Flower (Celery Monitoring)
+  # ============================================
+  flower:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: diaspora-flower
+    command: celery -A src.api.celery_app flower --port=5555
+    ports:
+      - "5555:5555"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+      - worker
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # Frontend (React)
+  # ============================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: diaspora-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - api
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # PostgreSQL Database
+  # ============================================
+  db:
+    image: postgres:15-alpine
+    container_name: diaspora-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=diaspora
+      - POSTGRES_PASSWORD=diaspora
+      - POSTGRES_DB=diaspora_archive
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/init-db.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U diaspora"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ============================================
+  # Redis (Cache & Message Broker)
+  # ============================================
+  redis:
+    image: redis:7-alpine
+    container_name: diaspora-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ============================================
+  # Elasticsearch (Search)
+  # ============================================
+  elasticsearch:
+    image: elasticsearch:8.11.0
+    container_name: diaspora-elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9200 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # ============================================
+  # Neo4j (Graph Database)
+  # ============================================
+  neo4j:
+    image: neo4j:5.14-community
+    container_name: diaspora-neo4j
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    environment:
+      - NEO4J_AUTH=neo4j/diaspora123
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+
+  # ============================================
+  # MinIO (Object Storage)
+  # ============================================
+  minio:
+    image: minio/minio:latest
+    container_name: diaspora-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # ============================================
+  # Nginx (Reverse Proxy) - Production
+  # ============================================
+  nginx:
+    image: nginx:alpine
+    container_name: diaspora-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - api
+      - frontend
+    networks:
+      - diaspora-network
+    restart: unless-stopped
+    profiles:
+      - production
+
+# ============================================
+# Networks
+# ============================================
+networks:
+  diaspora-network:
+    driver: bridge
+
+# ============================================
+# Volumes
+# ============================================
+volumes:
+  postgres_data:
+  redis_data:
+  elasticsearch_data:
+  neo4j_data:
+  neo4j_logs:
+  minio_data:
