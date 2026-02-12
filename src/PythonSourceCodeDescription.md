@@ -1,7 +1,22 @@
+## 📦 구현 완료 - AI 기반 디지털화 처리 모듈
 
-## 🔧 모듈별 주요 기능
 
-### 1. 이미지 처리 (image/restoration.py)
+### 📊 코드 통계
+
+모듈|파일|코드라인
+---|---|---
+이미지처리|restoration.py|904 lines
+문서처리|ocr.py|1,175 lines
+동영상처리|video_processing.py|1,175 lines
+음성처리|transcription.py|967 lines
+구술처리|oral_processing.py|1,263 lines
+공통유틸리티|common.py|453 lines
+총계| |~6,000 lines
+
+
+### 🔧 모듈별 주요 기능
+
+#### 1. 이미지 처리 (image/restoration.py)
 
 - ImageRestorer: 통합 이미지 복원 파이프라인
 - SuperResolution: Real-ESRGAN 초해상도
@@ -10,7 +25,7 @@
 - ImageCaptioner: BLIP-2 캡셔닝
 - SceneClassifier: CLIP 장면 분류
 
-### 2. 문서 처리 (document/ocr.py)
+#### 2. 문서 처리 (document/ocr.py)
 
 - DocumentProcessor: 통합 문서 처리
 - PrintedTextOCR: EasyOCR/Tesseract
@@ -18,7 +33,7 @@
 - LayoutAnalyzer: LayoutLMv3 레이아웃
 - NamedEntityRecognizer: 개체명 인식
 
-### 3. 동영상 처리 (video/processing.py)
+#### 3. 동영상 처리 (video/processing.py)
 
 - VideoProcessor: 통합 비디오 처리
 - SceneDetector: PySceneDetect 장면 분할
@@ -27,7 +42,7 @@
 - VideoStabilizer: 손떨림 보정
 - SubtitleGenerator: Whisper 자막 생성
 
-### 4. 음성 처리 (audio/transcription.py)
+#### 4. 음성 처리 (audio/transcription.py)
 
 - AudioProcessor: 통합 음성 처리
 - SpeechRecognizer: Whisper 음성 인식
@@ -35,7 +50,7 @@
 - CodeSwitchingDetector: 코드 스위칭 감지
 - EmotionAnalyzer: 감정 분석
 
-### 5. 구술 처리 (oral_history/processing.py)
+#### 5. 구술 처리 (oral_history/processing.py)
 
 - OralHistoryProcessor: 통합 구술 분석
 - TopicModeler: BERTopic 주제 분할
