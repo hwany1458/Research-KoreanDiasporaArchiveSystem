@@ -1,6 +1,6 @@
 # Old Photo Restoration (Official PyTorch Implementation)
 
-<img src='imgs/0001.jpg'/>
+<img src='./Images/0001.jpg'/>
 
 ### [Project Page](http://raywzy.com/Old_Photo/) | [Paper (CVPR version)](https://arxiv.org/abs/2004.09484) | [Paper (Journal version)](https://arxiv.org/pdf/2009.07047v1.pdf) | [Pretrained Model](https://hkustconnect-my.sharepoint.com/:f:/g/personal/bzhangai_connect_ust_hk/Em0KnYOeSSxFtp4g_dhWdf0BdeT3tY12jIYJ6qvSf300cA?e=nXkJH2) | [Colab Demo](https://colab.research.google.com/drive/1NEm6AsybIiC5TwTU_4DqDkQO0nFRB-uA?usp=sharing)  | [Replicate Demo & Docker Image](https://replicate.ai/zhangmozhe/bringing-old-photos-back-to-life) :fire:
 
@@ -25,7 +25,7 @@ The code originates from our research project and the aim is to demonstrate the 
 
 The framework now supports the restoration of high-resolution input.
 
-<img src='imgs/HR_result.png'>
+<img src='./Images/HR_result.png'>
 
 Training code is available and welcome to have a try and learn the training details. 
 
@@ -128,14 +128,14 @@ python detection.py --test_path [test_image_folder_path] \
                     --input_size [resize_256|full_size|scale_256]
 ```
 
-<img src='imgs/scratch_detection.png'>
+<img src='./Images/scratch_detection.png'>
 
 ### 3) Global Restoration
 
 A triplet domain translation network is proposed to solve both structured degradation and unstructured degradation of old photos.
 
 <p align="center">
-<img src='imgs/pipeline.PNG' width="50%" height="50%"/>
+<img src='./Images/pipeline.PNG' width="50%" height="50%"/>
 </p>
 
 ```
@@ -150,7 +150,7 @@ python test.py --Quality_restore \
                --outputs_dir [output_path]
 ```
 
-<img src='imgs/global.png'>
+<img src='./Images/global.png'>
 
 
 ### 4) Face Enhancement
@@ -158,11 +158,11 @@ python test.py --Quality_restore \
 We use a progressive generator to refine the face regions of old photos. More details could be found in our journal submission and `./Face_Enhancement` folder.
 
 <p align="center">
-<img src='imgs/face_pipeline.jpg' width="60%" height="60%"/>
+<img src='./Images/face_pipeline.jpg' width="60%" height="60%"/>
 </p>
 
 
-<img src='imgs/face.png'>
+<img src='./Images/face.png'>
 
 > *NOTE*: 
 > This repo is mainly for research purpose and we have not yet optimized the running performance. 
@@ -181,7 +181,7 @@ A user-friendly GUI which takes input of image by user and shows result in respe
 4. Wait for a while and see results on GUI window.
 5. Exit window by clicking Exit Window and get your result image in output folder.
 
-<img src='imgs/gui.PNG'>
+<img src='./Images/gui.PNG'>
 
 ## How to train?
 
