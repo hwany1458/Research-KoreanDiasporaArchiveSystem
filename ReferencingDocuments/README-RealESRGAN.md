@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="assets/realesrgan_logo.png" height=120>
+  <img src="./Images/realesrgan_logo.png" height=120>
 </p>
 
-## <div align="center"><b><a href="README.md">English</a> | <a href="README_CN.md">简体中文</a></b></div>
+## <div align="center"><b><a href="README.md">English</a> | <a href="README_CN.md">简体中文</a></b>
+<br>
+-(Origin[])
+<br>
+</div>
 
 <div align="center">
 
@@ -51,7 +55,7 @@ Other recommended projects:<br>
 > [Tencent ARC Lab](https://arc.tencent.com/en/ai-demos/imgRestore); Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
 
 <p align="center">
-  <img src="assets/teaser.jpg">
+  <img src="./Images/teaser.jpg">
 </p>
 
 ---
