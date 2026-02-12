@@ -4,7 +4,7 @@
 
 ## <div align="center"><b><a href="README.md">English</a> | <a href="README_CN.md">简体中文</a></b>
 <br>
--(Origin[])
+-(Origin[https://github.com/xinntao/Real-ESRGAN])
 <br>
 </div>
 
