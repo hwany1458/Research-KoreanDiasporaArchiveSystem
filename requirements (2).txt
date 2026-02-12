@@ -1,0 +1,76 @@
+# 한인 디아스포라 기록유산 디지털화 시스템
+# 필수 패키지 목록 (Requirements)
+
+# ============ 핵심 프레임워크 ============
+numpy>=1.24.0
+scipy>=1.10.0
+pillow>=10.0.0
+opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
+
+# ============ 딥러닝 프레임워크 ============
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# ============ AI/ML 라이브러리 ============
+transformers>=4.35.0
+huggingface-hub>=0.19.0
+sentence-transformers>=2.2.0
+accelerate>=0.24.0
+
+# ============ 이미지 처리 ============
+basicsr>=1.4.2
+realesrgan>=0.3.0
+gfpgan>=1.3.8
+facexlib>=0.3.0
+
+# ============ OCR ============
+easyocr>=1.7.0
+pytesseract>=0.3.10
+
+# ============ 음성 처리 ============
+openai-whisper>=20231117
+librosa>=0.10.0
+soundfile>=0.12.0
+pyannote.audio>=3.1.0
+noisereduce>=2.0.0
+
+# ============ 비디오 처리 ============
+scenedetect>=0.6.1
+moviepy>=1.0.3
+
+# ============ NLP ============
+bertopic>=0.15.0
+konlpy>=0.6.0
+kiwipiepy>=0.15.0
+
+# ============ 웹 프레임워크 ============
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+
+# ============ 데이터베이스 ============
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+redis>=5.0.0
+elasticsearch>=8.0.0
+
+# ============ 유틸리티 ============
+tqdm>=4.66.0
+python-multipart>=0.0.6
+aiofiles>=23.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+click>=8.1.0
+
+# ============ 테스트 ============
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+
+# ============ 개발 도구 ============
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.1.0
+mypy>=1.7.0

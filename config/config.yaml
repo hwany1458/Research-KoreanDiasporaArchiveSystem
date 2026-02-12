@@ -1,0 +1,322 @@
+# ============================================================
+# 한인 디아스포라 기록유산 AI 디지털화 시스템 설정
+# Korean Diaspora Documentary Heritage AI Digitization System
+# ============================================================
+
+# 시스템 기본 설정
+system:
+  name: "Diaspora Archive Digitization System"
+  version: "1.0.0"
+  debug: false
+  log_level: "INFO"
+  log_file: "logs/system.log"
+
+# 디바이스 설정
+device:
+  prefer_gpu: true
+  gpu_id: 0
+  max_gpu_memory: 0.9  # GPU 메모리 사용 비율
+
+# ============ 이미지 처리 설정 ============
+image_processing:
+  # 초해상도
+  super_resolution:
+    model: "RealESRGAN_x4plus"
+    scale: 4
+    tile_size: 400
+    tile_pad: 10
+    half_precision: true
+  
+  # 얼굴 향상
+  face_enhancement:
+    model: "GFPGAN"
+    version: "1.4"
+    upscale: 2
+    bg_upsampler: "realesrgan"
+  
+  # 인페인팅
+  inpainting:
+    model: "LaMa"
+    threshold: 0.5
+  
+  # 컬러화
+  colorization:
+    model: "DeOldify"
+    model_type: "artistic"  # artistic or stable
+    render_factor: 35
+  
+  # 이미지 캡셔닝
+  captioning:
+    model: "Salesforce/blip-image-captioning-large"
+    max_length: 50
+  
+  # 장면 분류
+  scene_classification:
+    model: "openai/clip-vit-base-patch32"
+    categories:
+      - "family gathering"
+      - "wedding ceremony"
+      - "birthday party"
+      - "graduation ceremony"
+      - "outdoor activity"
+      - "indoor portrait"
+      - "street scene"
+      - "workplace"
+      - "school"
+      - "church"
+      - "restaurant"
+      - "travel"
+      - "holiday celebration"
+
+# ============ 문서 처리 설정 ============
+document_processing:
+  # 전처리
+  preprocessing:
+    auto_rotate: true
+    denoise: true
+    binarize: false
+    target_dpi: 300
+  
+  # 인쇄체 OCR
+  printed_ocr:
+    engine: "easyocr"  # easyocr or tesseract
+    languages: ["ko", "en"]
+    confidence_threshold: 0.5
+  
+  # 손글씨 인식
+  handwriting:
+    model: "microsoft/trocr-base-handwritten"
+    languages: ["ko", "en"]
+  
+  # 레이아웃 분석
+  layout_analysis:
+    model: "microsoft/layoutlmv3-base"
+    detect_tables: true
+    detect_figures: true
+  
+  # 개체명 인식
+  ner:
+    model: "monologg/koelectra-base-v3-discriminator"
+    entity_types:
+      - "PER"  # 인명
+      - "LOC"  # 지명
+      - "ORG"  # 기관명
+      - "DAT"  # 날짜
+      - "TIM"  # 시간
+
+# ============ 비디오 처리 설정 ============
+video_processing:
+  # 장면 감지
+  scene_detection:
+    method: "content"  # content or threshold
+    threshold: 30.0
+    min_scene_length: 1.0  # 초
+  
+  # 키프레임 추출
+  keyframe_extraction:
+    frames_per_scene: 3
+    uniform_interval: 5.0  # 초
+  
+  # 품질 향상
+  enhancement:
+    scale: 2
+    denoise: true
+    tile_size: 400
+  
+  # 안정화
+  stabilization:
+    smoothing_radius: 30
+  
+  # 자막 생성
+  subtitles:
+    model: "whisper-large-v3"
+    language: "ko"
+    output_format: "srt"
+
+# ============ 음성 처리 설정 ============
+audio_processing:
+  # 전처리
+  preprocessing:
+    target_sample_rate: 16000
+    denoise: true
+    normalize: true
+    target_db: -20.0
+  
+  # 음성 인식
+  speech_recognition:
+    model: "whisper-large-v3"
+    language: null  # null for auto-detection
+    word_timestamps: true
+    task: "transcribe"
+  
+  # 화자 분리
+  speaker_diarization:
+    model: "pyannote/speaker-diarization-3.1"
+    min_speakers: 1
+    max_speakers: 10
+  
+  # 감정 분석
+  emotion_analysis:
+    model: "ehcalabres/wav2vec2-lg-xlsr-en-speech-emotion-recognition"
+    enabled: false
+
+# ============ 구술 기록 처리 설정 ============
+oral_history_processing:
+  # 주제 분할
+  topic_segmentation:
+    min_segment_duration: 30.0  # 초
+    model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  
+  # 인용구 추출
+  quote_extraction:
+    max_quotes: 20
+    min_length: 20
+    max_length: 200
+    significance_threshold: 0.3
+  
+  # 요약
+  summarization:
+    model: "facebook/bart-large-cnn"
+    max_length: 150
+    min_length: 30
+  
+  # 감정 분석
+  sentiment_analysis:
+    model: "nlptown/bert-base-multilingual-uncased-sentiment"
+
+# ============ 메타데이터 설정 ============
+metadata:
+  # Dublin Core 기본 필드
+  dublin_core:
+    - title
+    - creator
+    - subject
+    - description
+    - publisher
+    - contributor
+    - date
+    - type
+    - format
+    - identifier
+    - source
+    - language
+    - relation
+    - coverage
+    - rights
+  
+  # 디아스포라 확장 필드
+  diaspora_extension:
+    - origin
+    - destination
+    - migration_year
+    - generation
+    - persons
+    - event
+    - emotion
+    - transcription
+    - ai_generated
+
+# ============ 저장소 설정 ============
+storage:
+  # 로컬 저장소
+  local:
+    base_path: "./data"
+    uploads_dir: "uploads"
+    processed_dir: "processed"
+    outputs_dir: "outputs"
+    temp_dir: "temp"
+  
+  # MinIO/S3 설정
+  object_storage:
+    enabled: false
+    endpoint: "localhost:9000"
+    access_key: ""
+    secret_key: ""
+    bucket: "diaspora-archive"
+    secure: false
+
+# ============ 데이터베이스 설정 ============
+database:
+  # PostgreSQL
+  postgresql:
+    host: "localhost"
+    port: 5432
+    database: "diaspora_archive"
+    user: "postgres"
+    password: ""
+  
+  # Elasticsearch
+  elasticsearch:
+    hosts: ["localhost:9200"]
+    index_prefix: "diaspora"
+  
+  # Neo4j
+  neo4j:
+    uri: "bolt://localhost:7687"
+    user: "neo4j"
+    password: ""
+  
+  # Redis
+  redis:
+    host: "localhost"
+    port: 6379
+    db: 0
+
+# ============ API 설정 ============
+api:
+  # FastAPI 서버
+  server:
+    host: "0.0.0.0"
+    port: 8000
+    workers: 4
+    reload: false
+  
+  # CORS
+  cors:
+    allow_origins: ["*"]
+    allow_methods: ["*"]
+    allow_headers: ["*"]
+  
+  # 업로드 제한
+  upload:
+    max_file_size: 500  # MB
+    allowed_extensions:
+      image: [".jpg", ".jpeg", ".png", ".tiff", ".tif", ".bmp"]
+      document: [".pdf", ".jpg", ".jpeg", ".png", ".tiff"]
+      audio: [".wav", ".mp3", ".flac", ".m4a", ".ogg"]
+      video: [".mp4", ".avi", ".mov", ".mkv", ".webm"]
+
+# ============ 외부 API 설정 ============
+external_api:
+  # OpenAI
+  openai:
+    api_key: ""
+    model: "gpt-4"
+    max_tokens: 2000
+  
+  # HuggingFace
+  huggingface:
+    api_key: ""
+  
+  # Google Cloud Vision (옵션)
+  google_vision:
+    enabled: false
+    credentials_path: ""
+
+# ============ 성능 설정 ============
+performance:
+  # 배치 처리
+  batch_size: 8
+  
+  # 워커 수
+  num_workers: 4
+  
+  # 캐시
+  cache:
+    enabled: true
+    ttl: 3600  # 초
+  
+  # 타임아웃
+  timeout:
+    processing: 300  # 초
+    api_request: 60  # 초
