@@ -59,3 +59,27 @@
 - NarrativeAnalyzer: 내러티브 구조 분석
 - SentimentAnalyzer: 감정 분석
 
+### 📁 파일 구조
+
+```
+diaspora-implementation/
+├── config/
+│   └── config.yaml          # 시스템 설정
+├── requirements.txt          # 필수 패키지
+└── src/
+    ├── core/
+    │   ├── image/
+    │   │   └── restoration.py
+    │   ├── document/
+    │   │   └── ocr.py
+    │   ├── video/
+    │   │   └── processing.py
+    │   ├── audio/
+    │   │   └── transcription.py
+    │   ├── oral_history/
+    │   │   └── processing.py
+    │   └── metadata/
+    └── utils/
+        └── common.py
+```
+
