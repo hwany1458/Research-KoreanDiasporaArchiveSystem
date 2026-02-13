@@ -65,7 +65,7 @@
 diaspora-implementation/
 ├── config/
 │   └── config.yaml          # 시스템 설정
-├── requirements.txt          # 필수 패키지
+├── requirements.txt         # 필수 패키지
 └── src/
     ├── core/
     │   ├── image/
