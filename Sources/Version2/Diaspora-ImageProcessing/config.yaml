@@ -1,0 +1,57 @@
+# config.yaml
+# AI 기반 이미지 복원 시스템 설정
+
+system:
+  device: "cuda"
+  gpu_id: 0
+  num_workers: 4
+
+paths:
+  input_dir: "./data/input"
+  output_dir: "./data/output"
+  models_dir: "./models"
+
+super_resolution:
+  enabled: true
+  model_name: "RealESRGAN_x4plus"
+  scale: 4
+  tile_size: 512
+  half_precision: true
+  auto_trigger:
+    min_resolution: 512
+    max_resolution: 2048
+
+face_enhancement:
+  enabled: true
+  model_name: "GFPGANv1.4"
+  upscale: 2
+  bg_upsampler: "realesrgan"
+
+colorization:
+  enabled: true
+  model_type: "artistic"
+  render_factor: 35
+  auto_trigger:
+    saturation_threshold: 0.1
+
+image_analysis:
+  captioning:
+    enabled: true
+    model_name: "Salesforce/blip-image-captioning-large"
+    max_length: 50
+  scene_classification:
+    enabled: true
+    model_name: "openai/clip-vit-large-patch14"
+    top_k: 3
+  face_detection:
+    enabled: true
+    model: "hog"
+
+pipeline:
+  conditional_execution: true
+  save_intermediate: false
+  batch_size: 1
+
+logging:
+  level: "INFO"
+  file: "./logs/processing.log"

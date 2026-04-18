@@ -1,0 +1,43 @@
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# ── Models (용량 큰 .pth 파일은 GitHub에 올리지 않음) ───────
+models/realesrgan/*.pth
+models/gfpgan/*.pth
+models/facexlib/*.pth
+models/deoldify/*.pth
+# DDColor 모델은 HuggingFace에서 자동 다운로드
+
+# ── Data ────────────────────────────────────────────────────
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# ── DDColor 소스 (서브모듈로 관리) ──────────────────────────
+ddcolor_src/
+
+# ── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── HuggingFace 캐시 ────────────────────────────────────────
+~/.cache/huggingface/
+
+# ── OS ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ─────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
