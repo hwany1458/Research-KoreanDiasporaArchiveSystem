@@ -1,9 +1,8 @@
 # AI 기반 한인 디아스포라 기록 유산 디지털화 시스템
 ## Image Processing Module
 
-> **박사학위 논문 구현 코드**  
+> ** 논문 구현 코드**  
 > "AI 기반 한인 디아스포라 기록 유산 디지털화 및 실감형 콘텐츠 생성 모델 연구"  
-> 원광대학교 게임콘텐츠학과
 
 [![Python](https://img.shields.io/badge/Python-3.10.11-blue)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.2+cu121-ee4c2c)](https://pytorch.org)
@@ -458,8 +457,8 @@ BlipForConditionalGeneration requires PyTorch >= 2.4
 
 ---
 
-## 👤 저자
+## 👤 컨택트
 
-**김용환 (YongHwan Kim)**  
+** 이용환 **  
 원광대학교 게임콘텐츠학과  
 2026
