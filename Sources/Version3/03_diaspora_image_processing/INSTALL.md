@@ -176,6 +176,12 @@ pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https
 python -c "import torch; print(f'PyTorch: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"None\"}')"
 ```
 
+여기서 오류 발생
+```
+python
+```
+으로 들아가서 확인
+
 다음과 같이 출력되면 정상:
 ```
 PyTorch: 2.1.2+cu121
@@ -194,7 +200,7 @@ GPU: NVIDIA GeForce RTX 4080
 ### 8.1 1단계: 핵심 이미지 처리 라이브러리
 
 ```powershell
-pip install opencv-python==4.13.0.86
+pip install opencv-python==4.13.0.92
 pip install Pillow
 pip install numpy
 pip install pyyaml
