@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.392699",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945669.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11945669_restored.jpg",
+      "success": true,
+      "original_size": [
+        641,
+        1200
+      ],
+      "final_size": [
+        2564,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in a suit and tie",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8466044664382935
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:03:59.347730",
+        "dc:description": "this is an old photo of a man in a suit and tie",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 54.41752028465271,
+      "stage_times": {
+        "super_resolution": 32.634331941604614,
+        "face_enhancement": 8.132044792175293,
+        "colorization": 1.986792802810669,
+        "analysis": 11.621894121170044
+      },
+      "errors": []
+    }
+  ]
+}

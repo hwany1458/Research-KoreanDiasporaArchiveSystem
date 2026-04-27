@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.457396",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950849.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950849_restored.jpg",
+      "success": true,
+      "original_size": [
+        862,
+        1200
+      ],
+      "final_size": [
+        3448,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a picture of a woman in a graduation cap and gown",
+      "scenes": [
+        [
+          "graduation ceremony",
+          0.3456259071826935
+        ],
+        [
+          "family memorial service (jesa)",
+          0.30697423219680786
+        ],
+        [
+          "portrait photo",
+          0.27986276149749756
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:18:09.915243",
+        "dc:description": "there is a picture of a woman in a graduation cap and gown",
+        "dc:subject": [
+          "graduation ceremony",
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 60.99934124946594,
+      "stage_times": {
+        "super_resolution": 39.15153431892395,
+        "face_enhancement": 10.802114963531494,
+        "colorization": 1.8451755046844482,
+        "analysis": 9.168059587478638
+      },
+      "errors": []
+    }
+  ]
+}

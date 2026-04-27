@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.458393",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950908.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950908_restored.jpg",
+      "success": true,
+      "original_size": [
+        953,
+        1200
+      ],
+      "final_size": [
+        3812,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in front of a church",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.5567384958267212
+        ],
+        [
+          "wedding ceremony",
+          0.18967993557453156
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:20:15.633845",
+        "dc:description": "this is a group of people posing for a picture in front of a church",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 71.625905752182,
+      "stage_times": {
+        "super_resolution": 39.908169984817505,
+        "face_enhancement": 20.269237518310547,
+        "colorization": 2.1617445945739746,
+        "analysis": 9.239888429641724
+      },
+      "errors": []
+    }
+  ]
+}

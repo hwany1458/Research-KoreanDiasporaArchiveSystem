@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.463881",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951189.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951189_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        878
+      ],
+      "final_size": [
+        4800,
+        3512
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a group of women dressed in traditional clothing posing for a picture",
+      "scenes": [
+        [
+          "family gathering",
+          0.6772165298461914
+        ],
+        [
+          "family memorial service (jesa)",
+          0.11270850151777267
+        ]
+      ],
+      "face_count": 8,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:31:46.011924",
+        "dc:description": "there are a group of women dressed in traditional clothing posing for a picture",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 7
+      },
+      "total_time": 74.46618342399597,
+      "stage_times": {
+        "super_resolution": 41.42702102661133,
+        "face_enhancement": 21.567326307296753,
+        "colorization": 1.9209320545196533,
+        "analysis": 9.51303219795227
+      },
+      "errors": []
+    }
+  ]
+}

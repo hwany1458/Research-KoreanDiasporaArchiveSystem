@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.451970",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950720.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950720_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        679
+      ],
+      "final_size": [
+        4800,
+        2716
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a group of people sitting on the steps of a house",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.32653507590293884
+        ],
+        [
+          "family gathering",
+          0.27721238136291504
+        ],
+        [
+          "family picnic",
+          0.21955043077468872
+        ]
+      ],
+      "face_count": 7,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:09:48.418312",
+        "dc:description": "there are a group of people sitting on the steps of a house",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 7
+      },
+      "total_time": 58.50257444381714,
+      "stage_times": {
+        "super_resolution": 29.451852083206177,
+        "face_enhancement": 17.774895668029785,
+        "colorization": 1.6989068984985352,
+        "analysis": 9.548336029052734
+      },
+      "errors": []
+    }
+  ]
+}

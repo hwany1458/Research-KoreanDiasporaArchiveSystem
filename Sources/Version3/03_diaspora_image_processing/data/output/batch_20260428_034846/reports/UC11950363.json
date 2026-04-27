@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.442434",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950363.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950363_restored.jpg",
+      "success": true,
+      "original_size": [
+        783,
+        1200
+      ],
+      "final_size": [
+        3132,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman standing next to a bicycle with a basket on the back of it",
+      "scenes": [
+        [
+          "portrait photo",
+          0.5520791411399841
+        ],
+        [
+          "street scene",
+          0.3145016133785248
+        ],
+        [
+          "outdoor scene",
+          0.10585322231054306
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:53:51.847874",
+        "dc:description": "there is a woman standing next to a bicycle with a basket on the back of it",
+        "dc:subject": [
+          "portrait photo",
+          "street scene"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 50.273242712020874,
+      "stage_times": {
+        "super_resolution": 31.922871112823486,
+        "face_enhancement": 8.377271175384521,
+        "colorization": 1.7613937854766846,
+        "analysis": 8.176643133163452
+      },
+      "errors": []
+    }
+  ]
+}

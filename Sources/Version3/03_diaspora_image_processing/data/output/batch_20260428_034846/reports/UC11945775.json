@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.394734",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945775.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11945775_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        960
+      ],
+      "final_size": [
+        4800,
+        3840
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a painting of an old airplane that is sitting in the grass",
+      "scenes": [
+        [
+          "family trip",
+          0.3133881092071533
+        ],
+        [
+          "portrait photo",
+          0.2573546767234802
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:07:05.135712",
+        "dc:description": "there is a painting of an old airplane that is sitting in the grass",
+        "dc:subject": [
+          "family trip"
+        ]
+      },
+      "total_time": 61.267210245132446,
+      "stage_times": {
+        "super_resolution": 42.9095721244812,
+        "face_enhancement": 5.174001693725586,
+        "colorization": 2.60028338432312,
+        "analysis": 10.546997547149658
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.448475",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950598.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950598_restored.jpg",
+      "success": true,
+      "original_size": [
+        797,
+        1200
+      ],
+      "final_size": [
+        3188,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is sitting in the grass with a kite",
+      "scenes": [
+        [
+          "portrait photo",
+          0.3130668103694916
+        ],
+        [
+          "outdoor scene",
+          0.2550988793373108
+        ],
+        [
+          "family picnic",
+          0.21281933784484863
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:02:55.068050",
+        "dc:description": "there is a woman that is sitting in the grass with a kite",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 53.62733602523804,
+      "stage_times": {
+        "super_resolution": 32.46243453025818,
+        "face_enhancement": 10.505432367324829,
+        "colorization": 1.854243516921997,
+        "analysis": 8.764675617218018
+      },
+      "errors": []
+    }
+  ]
+}

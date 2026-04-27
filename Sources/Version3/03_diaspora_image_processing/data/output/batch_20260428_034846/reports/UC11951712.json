@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.474550",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951712.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951712_restored.jpg",
+      "success": true,
+      "original_size": [
+        767,
+        1200
+      ],
+      "final_size": [
+        3068,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a military uniform posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8111822605133057
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1226450502872467
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:47:51.815574",
+        "dc:description": "there is a man in a military uniform posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 55.99340891838074,
+      "stage_times": {
+        "super_resolution": 33.59984374046326,
+        "face_enhancement": 10.128418922424316,
+        "colorization": 1.886094331741333,
+        "analysis": 10.352004051208496
+      },
+      "errors": []
+    }
+  ]
+}

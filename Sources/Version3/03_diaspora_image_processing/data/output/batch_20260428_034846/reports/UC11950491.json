@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.447181",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950491.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950491_restored.jpg",
+      "success": true,
+      "original_size": [
+        812,
+        1200
+      ],
+      "final_size": [
+        3248,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman sitting on a toilet holding a baby and a small child",
+      "scenes": [
+        [
+          "family meal",
+          0.45237603783607483
+        ],
+        [
+          "family picnic",
+          0.19379451870918274
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1304294914007187
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:01:07.735521",
+        "dc:description": "there is a woman sitting on a toilet holding a baby and a small child",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 57.90871214866638,
+      "stage_times": {
+        "super_resolution": 35.139257192611694,
+        "face_enhancement": 12.567193746566772,
+        "colorization": 1.8413023948669434,
+        "analysis": 8.33008098602295
+      },
+      "errors": []
+    }
+  ]
+}

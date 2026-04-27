@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.438928",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950187.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950187_restored.jpg",
+      "success": true,
+      "original_size": [
+        1146,
+        1200
+      ],
+      "final_size": [
+        4584,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a suit and hat standing on the side of the road",
+      "scenes": [
+        [
+          "street scene",
+          0.4315330386161804
+        ],
+        [
+          "portrait photo",
+          0.37559449672698975
+        ],
+        [
+          "outdoor scene",
+          0.1516312211751938
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:48:04.060278",
+        "dc:description": "there is a man in a suit and hat standing on the side of the road",
+        "dc:subject": [
+          "street scene",
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 77.56526684761047,
+      "stage_times": {
+        "super_resolution": 49.16379761695862,
+        "face_enhancement": 14.628984212875366,
+        "colorization": 1.917689561843872,
+        "analysis": 11.809848070144653
+      },
+      "errors": []
+    }
+  ]
+}

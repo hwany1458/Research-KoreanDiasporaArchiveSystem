@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.386664",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11906884.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11906884_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        845
+      ],
+      "final_size": [
+        4800,
+        3380
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people holding up signs at a protest",
+      "scenes": [
+        [
+          "street scene",
+          0.4624957740306854
+        ],
+        [
+          "outdoor scene",
+          0.28934961557388306
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:53:33.239072",
+        "dc:description": "there is a group of people holding up signs at a protest",
+        "dc:subject": [
+          "street scene"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 72.715078830719,
+      "stage_times": {
+        "super_resolution": 34.56464457511902,
+        "face_enhancement": 23.899306297302246,
+        "colorization": 2.23667573928833,
+        "analysis": 11.972031116485596
+      },
+      "errors": []
+    }
+  ]
+}

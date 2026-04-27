@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.468431",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951272.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951272_restored.jpg",
+      "success": true,
+      "original_size": [
+        753,
+        1200
+      ],
+      "final_size": [
+        3012,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a cartoon drawing of a man on top of a pile of books with a hose attached to it",
+      "scenes": [
+        [
+          "workplace",
+          0.420771062374115
+        ],
+        [
+          "portrait photo",
+          0.1948331892490387
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:38:54.446682",
+        "dc:description": "there is a cartoon drawing of a man on top of a pile of books with a hose attached to it",
+        "dc:subject": [
+          "workplace"
+        ]
+      },
+      "total_time": 51.32689547538757,
+      "stage_times": {
+        "super_resolution": 33.57210373878479,
+        "face_enhancement": 4.1749372482299805,
+        "colorization": 1.8912348747253418,
+        "analysis": 11.625722646713257
+      },
+      "errors": []
+    }
+  ]
+}

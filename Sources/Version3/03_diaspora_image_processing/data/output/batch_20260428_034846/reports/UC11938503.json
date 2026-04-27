@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.388109",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938503.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11938503_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        805
+      ],
+      "final_size": [
+        4800,
+        3220
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.37909743189811707
+        ],
+        [
+          "birthday party",
+          0.22645536065101624
+        ],
+        [
+          "outdoor scene",
+          0.13100431859493256
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:57:13.661588",
+        "dc:description": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 71.56366038322449,
+      "stage_times": {
+        "super_resolution": 30.80508804321289,
+        "face_enhancement": 15.908954381942749,
+        "colorization": 2.13685941696167,
+        "analysis": 22.682037353515625
+      },
+      "errors": []
+    }
+  ]
+}

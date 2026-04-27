@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.475547",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951744.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951744_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        844
+      ],
+      "final_size": [
+        4800,
+        3376
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in a restaurant",
+      "scenes": [
+        [
+          "family meal",
+          0.37796664237976074
+        ],
+        [
+          "group photo",
+          0.23008985817432404
+        ],
+        [
+          "family memorial service (jesa)",
+          0.18410085141658783
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:51:21.486305",
+        "dc:description": "this is a group of people posing for a picture in a restaurant",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 15
+      },
+      "total_time": 82.19455933570862,
+      "stage_times": {
+        "super_resolution": 38.71863913536072,
+        "face_enhancement": 31.76887011528015,
+        "colorization": 1.9433505535125732,
+        "analysis": 9.725999116897583
+      },
+      "errors": []
+    }
+  ]
+}

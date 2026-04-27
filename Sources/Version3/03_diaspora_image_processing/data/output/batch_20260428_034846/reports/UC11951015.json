@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.461886",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951015.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951015_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        940
+      ],
+      "final_size": [
+        4800,
+        3760
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man standing at a podium in front of a large group of people",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.33038410544395447
+        ],
+        [
+          "family meal",
+          0.19102904200553894
+        ],
+        [
+          "family memorial service (jesa)",
+          0.16341543197631836
+        ]
+      ],
+      "face_count": 13,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:27:14.900190",
+        "dc:description": "there is a man standing at a podium in front of a large group of people",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 7
+      },
+      "total_time": 85.81205487251282,
+      "stage_times": {
+        "super_resolution": 39.29817867279053,
+        "face_enhancement": 33.03694009780884,
+        "colorization": 2.04396653175354,
+        "analysis": 11.393865823745728
+      },
+      "errors": []
+    }
+  ]
+}

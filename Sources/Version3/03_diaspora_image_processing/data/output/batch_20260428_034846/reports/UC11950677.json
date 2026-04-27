@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.450972",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950677.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950677_restored.jpg",
+      "success": true,
+      "original_size": [
+        841,
+        1200
+      ],
+      "final_size": [
+        3364,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a woman posing for a picture",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.4817415475845337
+        ],
+        [
+          "portrait photo",
+          0.3090369701385498
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:07:53.960305",
+        "dc:description": "this is an old photo of a woman posing for a picture",
+        "dc:subject": [
+          "family memorial service (jesa)",
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 52.220014333724976,
+      "stage_times": {
+        "super_resolution": 33.41006112098694,
+        "face_enhancement": 8.286097764968872,
+        "colorization": 1.6418442726135254,
+        "analysis": 8.84097695350647
+      },
+      "errors": []
+    }
+  ]
+}

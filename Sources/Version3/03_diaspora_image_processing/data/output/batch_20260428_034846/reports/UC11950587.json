@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.447181",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950587.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950587_restored.jpg",
+      "success": true,
+      "original_size": [
+        731,
+        1200
+      ],
+      "final_size": [
+        2924,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman dressed in wedding attire walking down the stairs",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.9227925539016724
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:02:01.445135",
+        "dc:description": "there is a man and a woman dressed in wedding attire walking down the stairs",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 53.69945192337036,
+      "stage_times": {
+        "super_resolution": 33.558615922927856,
+        "face_enhancement": 10.488238334655762,
+        "colorization": 1.907292366027832,
+        "analysis": 7.717163324356079
+      },
+      "errors": []
+    }
+  ]
+}

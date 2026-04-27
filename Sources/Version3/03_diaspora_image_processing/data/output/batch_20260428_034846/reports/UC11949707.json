@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.430471",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949707.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949707_restored.jpg",
+      "success": true,
+      "original_size": [
+        832,
+        1200
+      ],
+      "final_size": [
+        3328,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two women in white dresses standing on a rock in the water",
+      "scenes": [
+        [
+          "family trip",
+          0.5088873505592346
+        ],
+        [
+          "portrait photo",
+          0.24605461955070496
+        ],
+        [
+          "family picnic",
+          0.11662547290325165
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:37:12.533113",
+        "dc:description": "there are two women in white dresses standing on a rock in the water",
+        "dc:subject": [
+          "family trip"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 36.16915464401245,
+      "stage_times": {
+        "super_resolution": 21.41019606590271,
+        "face_enhancement": 8.793368577957153,
+        "colorization": 0.904249906539917,
+        "analysis": 5.025148868560791
+      },
+      "errors": []
+    }
+  ]
+}

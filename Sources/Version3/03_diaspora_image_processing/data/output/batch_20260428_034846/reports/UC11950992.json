@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.460888",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950992.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950992_restored.jpg",
+      "success": true,
+      "original_size": [
+        772,
+        1200
+      ],
+      "final_size": [
+        3088,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a family posing for a picture",
+      "scenes": [
+        [
+          "family gathering",
+          0.2575417160987854
+        ],
+        [
+          "portrait photo",
+          0.22286421060562134
+        ],
+        [
+          "family trip",
+          0.13826662302017212
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:24:49.157477",
+        "dc:description": "this is an old photo of a family posing for a picture",
+        "x:faceCount": 4
+      },
+      "total_time": 60.56846237182617,
+      "stage_times": {
+        "super_resolution": 35.72578239440918,
+        "face_enhancement": 14.435307741165161,
+        "colorization": 1.7304470539093018,
+        "analysis": 8.646151781082153
+      },
+      "errors": []
+    }
+  ]
+}

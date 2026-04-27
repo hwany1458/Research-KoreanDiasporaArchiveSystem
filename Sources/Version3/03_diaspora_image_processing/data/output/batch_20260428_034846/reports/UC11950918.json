@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.459389",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950918.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950918_restored.jpg",
+      "success": true,
+      "original_size": [
+        740,
+        1200
+      ],
+      "final_size": [
+        2960,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man and a woman posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.6323049664497375
+        ],
+        [
+          "family memorial service (jesa)",
+          0.17989233136177063
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:21:13.526877",
+        "dc:description": "this is an old photo of a man and a woman posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 57.86836886405945,
+      "stage_times": {
+        "super_resolution": 34.34260606765747,
+        "face_enhancement": 11.360626935958862,
+        "colorization": 1.7796599864959717,
+        "analysis": 10.356141090393066
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.445424",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950479.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950479_restored.jpg",
+      "success": true,
+      "original_size": [
+        790,
+        1200
+      ],
+      "final_size": [
+        3160,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman posing for a picture in a park",
+      "scenes": [
+        [
+          "family picnic",
+          0.5679075121879578
+        ],
+        [
+          "portrait photo",
+          0.16094331443309784
+        ],
+        [
+          "family trip",
+          0.1319824457168579
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:58:59.700458",
+        "dc:description": "there is a man and a woman posing for a picture in a park",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 55.37234950065613,
+      "stage_times": {
+        "super_resolution": 32.49484062194824,
+        "face_enhancement": 11.348564386367798,
+        "colorization": 1.7003726959228516,
+        "analysis": 9.793035745620728
+      },
+      "errors": []
+    }
+  ]
+}

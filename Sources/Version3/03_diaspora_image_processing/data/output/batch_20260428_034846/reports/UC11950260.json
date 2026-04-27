@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.440429",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950260.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950260_restored.jpg",
+      "success": true,
+      "original_size": [
+        697,
+        1200
+      ],
+      "final_size": [
+        2788,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men standing next to each other on a bridge",
+      "scenes": [
+        [
+          "portrait photo",
+          0.3714085519313812
+        ],
+        [
+          "outdoor scene",
+          0.2237769514322281
+        ],
+        [
+          "group photo",
+          0.12534423172473907
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:50:00.974983",
+        "dc:description": "there are two men standing next to each other on a bridge",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 51.160258054733276,
+      "stage_times": {
+        "super_resolution": 31.237344980239868,
+        "face_enhancement": 10.283605337142944,
+        "colorization": 1.5673625469207764,
+        "analysis": 8.044886112213135
+      },
+      "errors": []
+    }
+  ]
+}

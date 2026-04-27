@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.425659",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949598.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949598_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        812
+      ],
+      "final_size": [
+        4800,
+        3248
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men and a woman standing next to each other in front of a group of people",
+      "scenes": [
+        [
+          "birthday party",
+          0.25159645080566406
+        ],
+        [
+          "family gathering",
+          0.1595524400472641
+        ],
+        [
+          "family memorial service (jesa)",
+          0.15234825015068054
+        ]
+      ],
+      "face_count": 6,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:33:00.525152",
+        "dc:description": "there are two men and a woman standing next to each other in front of a group of people",
+        "x:faceCount": 4
+      },
+      "total_time": 35.14476537704468,
+      "stage_times": {
+        "super_resolution": 18.03683567047119,
+        "face_enhancement": 11.299911975860596,
+        "colorization": 0.9559195041656494,
+        "analysis": 4.810663938522339
+      },
+      "errors": []
+    }
+  ]
+}

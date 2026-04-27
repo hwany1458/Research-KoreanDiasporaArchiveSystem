@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.456399",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950778.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950778_restored.jpg",
+      "success": true,
+      "original_size": [
+        796,
+        1200
+      ],
+      "final_size": [
+        3184,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman and a baby sitting on a blanket in the grass",
+      "scenes": [
+        [
+          "family picnic",
+          0.46507883071899414
+        ],
+        [
+          "family trip",
+          0.18128392100334167
+        ],
+        [
+          "baby's first birthday (doljanchi)",
+          0.17923513054847717
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:15:00.657770",
+        "dc:description": "there is a woman and a baby sitting on a blanket in the grass",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 56.87680125236511,
+      "stage_times": {
+        "super_resolution": 35.254817485809326,
+        "face_enhancement": 12.25214433670044,
+        "colorization": 1.688833475112915,
+        "analysis": 7.648008108139038
+      },
+      "errors": []
+    }
+  ]
+}

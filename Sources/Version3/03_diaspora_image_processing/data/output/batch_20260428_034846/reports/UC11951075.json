@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.462884",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951075.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951075_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        920
+      ],
+      "final_size": [
+        4800,
+        3680
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and woman shaking hands with a man in a suit and a woman in a pink dress and a man in a black suit and white shirt",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.854714035987854
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:28:23.029136",
+        "dc:description": "there is a man and woman shaking hands with a man in a suit and a woman in a pink dress and a man in a black suit and white shirt",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 68.1197452545166,
+      "stage_times": {
+        "super_resolution": 38.6845703125,
+        "face_enhancement": 14.545064926147461,
+        "colorization": 1.8321058750152588,
+        "analysis": 13.020175695419312
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.432476",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949802.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949802_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        801
+      ],
+      "final_size": [
+        4800,
+        3204
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "scenes": [
+        [
+          "birthday party",
+          0.37148499488830566
+        ],
+        [
+          "portrait photo",
+          0.21772386133670807
+        ],
+        [
+          "outdoor scene",
+          0.1441638469696045
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:38:47.866486",
+        "dc:description": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+        "dc:subject": [
+          "birthday party"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 31.862935543060303,
+      "stage_times": {
+        "super_resolution": 17.065032720565796,
+        "face_enhancement": 8.640393733978271,
+        "colorization": 0.8710548877716064,
+        "analysis": 5.254139423370361
+      },
+      "errors": []
+    }
+  ]
+}

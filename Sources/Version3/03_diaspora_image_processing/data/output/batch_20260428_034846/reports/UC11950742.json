@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.455403",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950742.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950742_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        704
+      ],
+      "final_size": [
+        4800,
+        2816
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people that are sitting on a boat in the water",
+      "scenes": [
+        [
+          "family trip",
+          0.721220850944519
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:14:03.776790",
+        "dc:description": "there is a group of people that are sitting on a boat in the water",
+        "dc:subject": [
+          "family trip"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 61.3363618850708,
+      "stage_times": {
+        "super_resolution": 34.3426194190979,
+        "face_enhancement": 15.793167352676392,
+        "colorization": 1.827190637588501,
+        "analysis": 9.342693567276001
+      },
+      "errors": []
+    }
+  ]
+}

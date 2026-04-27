@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.432476",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949834.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949834_restored.jpg",
+      "success": true,
+      "original_size": [
+        833,
+        1200
+      ],
+      "final_size": [
+        3332,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two women standing on a rock by the ocean",
+      "scenes": [
+        [
+          "group photo",
+          0.42061662673950195
+        ],
+        [
+          "portrait photo",
+          0.13281236588954926
+        ],
+        [
+          "outdoor scene",
+          0.12274166941642761
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:39:22.521883",
+        "dc:description": "there are two women standing on a rock by the ocean",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 34.64891600608826,
+      "stage_times": {
+        "super_resolution": 19.541630268096924,
+        "face_enhancement": 9.193587064743042,
+        "colorization": 0.8660094738006592,
+        "analysis": 5.016872882843018
+      },
+      "errors": []
+    }
+  ]
+}

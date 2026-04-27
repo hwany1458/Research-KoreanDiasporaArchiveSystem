@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.446421",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950487.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950487_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        850
+      ],
+      "final_size": [
+        4800,
+        3400
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man shaking a woman ' s hand",
+      "scenes": [
+        [
+          "portrait photo",
+          0.40936732292175293
+        ],
+        [
+          "outdoor scene",
+          0.15873144567012787
+        ],
+        [
+          "family meal",
+          0.11495775729417801
+        ]
+      ],
+      "face_count": 6,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:00:09.818495",
+        "dc:description": "this is an old photo of a man shaking a woman ' s hand",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 70.1092541217804,
+      "stage_times": {
+        "super_resolution": 36.55823636054993,
+        "face_enhancement": 19.372697830200195,
+        "colorization": 1.9770102500915527,
+        "analysis": 12.16964077949524
+      },
+      "errors": []
+    }
+  ]
+}

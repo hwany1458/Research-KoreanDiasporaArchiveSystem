@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.456399",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950798.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950798_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        751
+      ],
+      "final_size": [
+        4800,
+        3004
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of children posing for a picture in front of a building",
+      "scenes": [
+        [
+          "group photo",
+          0.5774630904197693
+        ],
+        [
+          "school",
+          0.3589162528514862
+        ]
+      ],
+      "face_count": 46,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:17:08.910645",
+        "dc:description": "this is a group of children posing for a picture in front of a building",
+        "dc:subject": [
+          "group photo",
+          "school"
+        ],
+        "x:faceCount": 46
+      },
+      "total_time": 128.2436351776123,
+      "stage_times": {
+        "super_resolution": 34.70258712768555,
+        "face_enhancement": 81.04096484184265,
+        "colorization": 1.632152795791626,
+        "analysis": 10.837433576583862
+      },
+      "errors": []
+    }
+  ]
+}

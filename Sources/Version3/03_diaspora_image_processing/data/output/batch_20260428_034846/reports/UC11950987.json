@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.460386",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950987.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950987_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        1161
+      ],
+      "final_size": [
+        4800,
+        4644
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people posing for a picture in front of a truck",
+      "scenes": [
+        [
+          "family picnic",
+          0.5684798955917358
+        ],
+        [
+          "family gathering",
+          0.29503488540649414
+        ]
+      ],
+      "face_count": 7,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:23:48.568327",
+        "dc:description": "there is a group of people posing for a picture in front of a truck",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 8
+      },
+      "total_time": 94.29060745239258,
+      "stage_times": {
+        "super_resolution": 53.806800365448,
+        "face_enhancement": 26.903167247772217,
+        "colorization": 2.280060291290283,
+        "analysis": 11.257582426071167
+      },
+      "errors": []
+    }
+  ]
+}

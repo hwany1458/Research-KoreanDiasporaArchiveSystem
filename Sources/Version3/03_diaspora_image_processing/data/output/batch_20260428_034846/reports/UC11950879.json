@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.458393",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950879.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950879_restored.jpg",
+      "success": true,
+      "original_size": [
+        714,
+        1200
+      ],
+      "final_size": [
+        2856,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a suit and hat standing in front of a bush",
+      "scenes": [
+        [
+          "portrait photo",
+          0.497268408536911
+        ],
+        [
+          "outdoor scene",
+          0.1834246665239334
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:19:04.020908",
+        "dc:description": "there is a man in a suit and hat standing in front of a bush",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 54.09543251991272,
+      "stage_times": {
+        "super_resolution": 34.04783058166504,
+        "face_enhancement": 9.21168565750122,
+        "colorization": 1.6401281356811523,
+        "analysis": 9.168805360794067
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.425659",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949615.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949615_restored.jpg",
+      "success": true,
+      "original_size": [
+        694,
+        1200
+      ],
+      "final_size": [
+        2776,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a suit and tie posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8382025361061096
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:33:24.990120",
+        "dc:description": "there is a man in a suit and tie posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 24.443464756011963,
+      "stage_times": {
+        "super_resolution": 13.826367616653442,
+        "face_enhancement": 5.783596038818359,
+        "colorization": 0.7014591693878174,
+        "analysis": 4.106765508651733
+      },
+      "errors": []
+    }
+  ]
+}

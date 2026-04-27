@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.386664",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11910349.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11910349_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        716
+      ],
+      "final_size": [
+        4800,
+        2864
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people that are standing together holding a flag",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.7812424302101135
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:54:44.527971",
+        "dc:description": "there is a group of people that are standing together holding a flag",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 71.26723504066467,
+      "stage_times": {
+        "super_resolution": 35.92750144004822,
+        "face_enhancement": 21.99861454963684,
+        "colorization": 2.0669121742248535,
+        "analysis": 11.246250867843628
+      },
+      "errors": []
+    }
+  ]
+}

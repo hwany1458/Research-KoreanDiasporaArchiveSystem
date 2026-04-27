@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.403488",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947646.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11947646_restored.jpg",
+      "success": true,
+      "original_size": [
+        697,
+        1200
+      ],
+      "final_size": [
+        2788,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men and a woman sitting on the steps of a house",
+      "scenes": [
+        [
+          "portrait photo",
+          0.3551631271839142
+        ],
+        [
+          "family gathering",
+          0.22415374219417572
+        ],
+        [
+          "group photo",
+          0.1577795445919037
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:13:18.733474",
+        "dc:description": "there are two men and a woman sitting on the steps of a house",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 27.580212593078613,
+      "stage_times": {
+        "super_resolution": 14.424844980239868,
+        "face_enhancement": 8.06148362159729,
+        "colorization": 0.7688357830047607,
+        "analysis": 4.295866250991821
+      },
+      "errors": []
+    }
+  ]
+}

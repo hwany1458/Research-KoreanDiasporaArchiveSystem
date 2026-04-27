@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.433472",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949880.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949880_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        802
+      ],
+      "final_size": [
+        4800,
+        3208
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man in a suit standing at a table with a bunch of people",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.5580387115478516
+        ],
+        [
+          "wedding ceremony",
+          0.3199959695339203
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:39:49.366930",
+        "dc:description": "there is a man in a suit standing at a table with a bunch of people",
+        "dc:subject": [
+          "family memorial service (jesa)",
+          "wedding ceremony"
+        ]
+      },
+      "total_time": 26.835111618041992,
+      "stage_times": {
+        "super_resolution": 16.68954634666443,
+        "face_enhancement": 4.236263036727905,
+        "colorization": 1.1448311805725098,
+        "analysis": 4.736819505691528
+      },
+      "errors": []
+    }
+  ]
+}

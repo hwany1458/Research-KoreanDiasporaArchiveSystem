@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.464877",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951204.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951204_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        903
+      ],
+      "final_size": [
+        4800,
+        3612
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in a pilot ' s uniform",
+      "scenes": [
+        [
+          "portrait photo",
+          0.4547766447067261
+        ],
+        [
+          "family memorial service (jesa)",
+          0.14827820658683777
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:33:51.536652",
+        "dc:description": "this is an old photo of a man in a pilot ' s uniform",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 63.70851135253906,
+      "stage_times": {
+        "super_resolution": 41.87474966049194,
+        "face_enhancement": 11.435177326202393,
+        "colorization": 1.6612424850463867,
+        "analysis": 8.694477558135986
+      },
+      "errors": []
+    }
+  ]
+}

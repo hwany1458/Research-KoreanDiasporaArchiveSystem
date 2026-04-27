@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.410408",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947888.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11947888_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        695
+      ],
+      "final_size": [
+        4800,
+        2780
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men that are sitting at a table in the shade",
+      "scenes": [
+        [
+          "outdoor scene",
+          0.5487220883369446
+        ],
+        [
+          "family picnic",
+          0.13213135302066803
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:19:11.836089",
+        "dc:description": "there are two men that are sitting at a table in the shade",
+        "dc:subject": [
+          "outdoor scene"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 25.75386381149292,
+      "stage_times": {
+        "super_resolution": 14.998821496963501,
+        "face_enhancement": 5.913354873657227,
+        "colorization": 0.6967074871063232,
+        "analysis": 4.1170573234558105
+      },
+      "errors": []
+    }
+  ]
+}

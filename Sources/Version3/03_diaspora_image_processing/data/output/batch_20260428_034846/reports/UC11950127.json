@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.437801",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950127.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950127_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        812
+      ],
+      "final_size": [
+        4800,
+        3248
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of women in uniform posing for a picture",
+      "scenes": [
+        [
+          "group photo",
+          0.545391321182251
+        ],
+        [
+          "graduation ceremony",
+          0.163058340549469
+        ]
+      ],
+      "face_count": 12,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:46:46.493981",
+        "dc:description": "there is a group of women in uniform posing for a picture",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 12
+      },
+      "total_time": 70.32757019996643,
+      "stage_times": {
+        "super_resolution": 32.373462200164795,
+        "face_enhancement": 26.100809812545776,
+        "colorization": 1.7683911323547363,
+        "analysis": 10.046905279159546
+      },
+      "errors": []
+    }
+  ]
+}

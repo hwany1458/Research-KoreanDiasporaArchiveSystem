@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.466379",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951222.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951222_restored.jpg",
+      "success": true,
+      "original_size": [
+        744,
+        1200
+      ],
+      "final_size": [
+        2976,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a suit and tie standing next to a chair",
+      "scenes": [
+        [
+          "portrait photo",
+          0.982119619846344
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:34:47.601015",
+        "dc:description": "there is a man in a suit and tie standing next to a chair",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 56.04145264625549,
+      "stage_times": {
+        "super_resolution": 35.63736820220947,
+        "face_enhancement": 9.676845788955688,
+        "colorization": 1.8812646865844727,
+        "analysis": 8.81786561012268
+      },
+      "errors": []
+    }
+  ]
+}

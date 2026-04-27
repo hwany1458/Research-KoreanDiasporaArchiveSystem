@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.442434",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950351.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950351_restored.jpg",
+      "success": true,
+      "original_size": [
+        707,
+        1200
+      ],
+      "final_size": [
+        2828,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and two women standing in front of a house",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.2721173167228699
+        ],
+        [
+          "portrait photo",
+          0.16573107242584229
+        ],
+        [
+          "family gathering",
+          0.1473095566034317
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:53:01.572922",
+        "dc:description": "there is a man and two women standing in front of a house",
+        "x:faceCount": 3
+      },
+      "total_time": 52.426281690597534,
+      "stage_times": {
+        "super_resolution": 31.25798797607422,
+        "face_enhancement": 11.224200010299683,
+        "colorization": 1.5620307922363281,
+        "analysis": 8.352647542953491
+      },
+      "errors": []
+    }
+  ]
+}

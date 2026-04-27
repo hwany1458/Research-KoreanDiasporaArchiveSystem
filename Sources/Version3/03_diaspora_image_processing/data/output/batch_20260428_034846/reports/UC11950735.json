@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.455403",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950735.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950735_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        980
+      ],
+      "final_size": [
+        4800,
+        3920
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three asian women sitting on the floor smiling for the camera",
+      "scenes": [
+        [
+          "group photo",
+          0.6240330934524536
+        ],
+        [
+          "portrait photo",
+          0.2721725404262543
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:13:02.423512",
+        "dc:description": "there are three asian women sitting on the floor smiling for the camera",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 68.83997654914856,
+      "stage_times": {
+        "super_resolution": 39.693026065826416,
+        "face_enhancement": 15.907752275466919,
+        "colorization": 1.9400088787078857,
+        "analysis": 11.260765314102173
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.464877",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951193.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951193_restored.jpg",
+      "success": true,
+      "original_size": [
+        834,
+        1200
+      ],
+      "final_size": [
+        3336,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a little boy that is sitting on a swing",
+      "scenes": [
+        [
+          "baby's first birthday (doljanchi)",
+          0.7834826707839966
+        ],
+        [
+          "portrait photo",
+          0.12947779893875122
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:32:47.830478",
+        "dc:description": "there is a little boy that is sitting on a swing",
+        "dc:subject": [
+          "baby's first birthday (doljanchi)"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 61.80756211280823,
+      "stage_times": {
+        "super_resolution": 39.455177545547485,
+        "face_enhancement": 11.105851650238037,
+        "colorization": 1.8802905082702637,
+        "analysis": 9.33251953125
+      },
+      "errors": []
+    }
+  ]
+}

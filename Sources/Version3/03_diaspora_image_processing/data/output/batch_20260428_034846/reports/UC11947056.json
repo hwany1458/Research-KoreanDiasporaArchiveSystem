@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.397849",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947056.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11947056_restored.jpg",
+      "success": true,
+      "original_size": [
+        719,
+        1200
+      ],
+      "final_size": [
+        2876,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in a suit and hat standing in front of an old car",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8059330582618713
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:08:23.807140",
+        "dc:description": "this is an old photo of a man in a suit and hat standing in front of an old car",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 12.110698699951172,
+      "stage_times": {
+        "super_resolution": 1.5365684032440186,
+        "face_enhancement": 5.105488061904907,
+        "colorization": 0.7345757484436035,
+        "analysis": 4.707809209823608
+      },
+      "errors": []
+    }
+  ]
+}

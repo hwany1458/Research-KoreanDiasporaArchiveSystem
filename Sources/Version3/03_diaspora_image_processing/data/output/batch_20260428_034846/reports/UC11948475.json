@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.413406",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948475.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11948475_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        890
+      ],
+      "final_size": [
+        4800,
+        3560
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is dressed in a wedding dress and veil",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.8109035491943359
+        ],
+        [
+          "portrait photo",
+          0.1430647373199463
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:22:57.387043",
+        "dc:description": "there is a woman that is dressed in a wedding dress and veil",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 39.38972854614258,
+      "stage_times": {
+        "super_resolution": 24.720319986343384,
+        "face_enhancement": 8.347198963165283,
+        "colorization": 0.9554944038391113,
+        "analysis": 5.3337812423706055
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.435466",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949969.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949969_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        791
+      ],
+      "final_size": [
+        4800,
+        3164
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a group of people posing for a picture",
+      "scenes": [
+        [
+          "family gathering",
+          0.5107572078704834
+        ],
+        [
+          "family picnic",
+          0.21728451550006866
+        ],
+        [
+          "family memorial service (jesa)",
+          0.13351447880268097
+        ]
+      ],
+      "face_count": 16,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:41:54.008919",
+        "dc:description": "this is an old photo of a group of people posing for a picture",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 19
+      },
+      "total_time": 41.626123905181885,
+      "stage_times": {
+        "super_resolution": 18.155524492263794,
+        "face_enhancement": 17.63205575942993,
+        "colorization": 0.8058321475982666,
+        "analysis": 4.9966747760772705
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.438928",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950214.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950214_restored.jpg",
+      "success": true,
+      "original_size": [
+        970,
+        1200
+      ],
+      "final_size": [
+        3880,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are many people sitting at a table with food and drinks",
+      "scenes": [
+        [
+          "family meal",
+          0.8095974326133728
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:49:09.791684",
+        "dc:description": "there are many people sitting at a table with food and drinks",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 65.72028255462646,
+      "stage_times": {
+        "super_resolution": 36.64643144607544,
+        "face_enhancement": 17.269819259643555,
+        "colorization": 1.9916164875030518,
+        "analysis": 9.769879817962646
+      },
+      "errors": []
+    }
+  ]
+}

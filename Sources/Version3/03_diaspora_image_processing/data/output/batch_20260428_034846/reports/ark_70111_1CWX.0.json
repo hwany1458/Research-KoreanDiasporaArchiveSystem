@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.384671",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\ark_70111_1CWX.0.jpeg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\ark_70111_1CWX.0_restored.jpeg",
+      "success": true,
+      "original_size": [
+        6308,
+        5937
+      ],
+      "final_size": [
+        6308,
+        5937
+      ],
+      "stages_applied": [
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "super_resolution: 메모리 안전 임계값 초과 (입력 6308x5937 = 37.5MP, 4배 후 599.2MP > 24.0MP)"
+      ],
+      "caption": "this is a picture of a man sitting on a bench in front of a picture of a group of women",
+      "scenes": [
+        [
+          "outdoor scene",
+          0.37226736545562744
+        ],
+        [
+          "family gathering",
+          0.20108498632907867
+        ],
+        [
+          "group photo",
+          0.13878017663955688
+        ]
+      ],
+      "face_count": 7,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:50:47.532021",
+        "dc:description": "this is a picture of a man sitting on a bench in front of a picture of a group of women",
+        "dc:subject": [
+          "outdoor scene"
+        ],
+        "x:faceCount": 6
+      },
+      "total_time": 116.88165640830994,
+      "stage_times": {
+        "super_resolution": 0.0,
+        "face_enhancement": 65.38351488113403,
+        "colorization": 3.907212495803833,
+        "analysis": 22.380672931671143
+      },
+      "errors": []
+    }
+  ]
+}

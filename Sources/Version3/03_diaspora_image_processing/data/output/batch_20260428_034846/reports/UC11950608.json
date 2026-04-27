@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.448475",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950608.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950608_restored.jpg",
+      "success": true,
+      "original_size": [
+        838,
+        1200
+      ],
+      "final_size": [
+        3352,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are many people that are standing on the deck of a ship",
+      "scenes": [
+        [
+          "workplace",
+          0.2703440487384796
+        ],
+        [
+          "portrait photo",
+          0.2602676451206207
+        ],
+        [
+          "outdoor scene",
+          0.24588781595230103
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:03:55.549607",
+        "dc:description": "there are many people that are standing on the deck of a ship"
+      },
+      "total_time": 60.47177195549011,
+      "stage_times": {
+        "super_resolution": 37.36194324493408,
+        "face_enhancement": 11.817691087722778,
+        "colorization": 1.8390235900878906,
+        "analysis": 9.415496349334717
+      },
+      "errors": []
+    }
+  ]
+}

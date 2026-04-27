@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.390607",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938702.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11938702_restored.jpg",
+      "success": true,
+      "original_size": [
+        847,
+        1200
+      ],
+      "final_size": [
+        3388,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three young children standing in a field of tall grass",
+      "scenes": [
+        [
+          "portrait photo",
+          0.2706339657306671
+        ],
+        [
+          "family picnic",
+          0.23502998054027557
+        ],
+        [
+          "group photo",
+          0.1592046469449997
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:00:50.179221",
+        "dc:description": "there are three young children standing in a field of tall grass",
+        "x:faceCount": 1
+      },
+      "total_time": 66.8258912563324,
+      "stage_times": {
+        "super_resolution": 33.75776720046997,
+        "face_enhancement": 19.028133630752563,
+        "colorization": 2.146613359451294,
+        "analysis": 11.857359886169434
+      },
+      "errors": []
+    }
+  ]
+}

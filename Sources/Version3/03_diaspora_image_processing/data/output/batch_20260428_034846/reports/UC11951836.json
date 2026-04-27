@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.477540",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951836.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951836_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        785
+      ],
+      "final_size": [
+        4800,
+        3140
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is standing in a room with a dress on",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.5736202597618103
+        ],
+        [
+          "family gathering",
+          0.1086641326546669
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:54:57.083767",
+        "dc:description": "there is a woman that is standing in a room with a dress on",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 54.96861028671265,
+      "stage_times": {
+        "super_resolution": 34.31079363822937,
+        "face_enhancement": 10.627101182937622,
+        "colorization": 1.911252737045288,
+        "analysis": 8.086573600769043
+      },
+      "errors": []
+    }
+  ]
+}

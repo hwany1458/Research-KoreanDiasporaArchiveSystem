@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.428969",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949674.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949674_restored.jpg",
+      "success": true,
+      "original_size": [
+        832,
+        1200
+      ],
+      "final_size": [
+        3328,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two people standing next to each other in a field",
+      "scenes": [
+        [
+          "portrait photo",
+          0.5114336013793945
+        ],
+        [
+          "outdoor scene",
+          0.15843716263771057
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:36:03.571439",
+        "dc:description": "there are two people standing next to each other in a field",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 34.94115495681763,
+      "stage_times": {
+        "super_resolution": 20.919917583465576,
+        "face_enhancement": 8.200300455093384,
+        "colorization": 0.87091064453125,
+        "analysis": 4.898398160934448
+      },
+      "errors": []
+    }
+  ]
+}

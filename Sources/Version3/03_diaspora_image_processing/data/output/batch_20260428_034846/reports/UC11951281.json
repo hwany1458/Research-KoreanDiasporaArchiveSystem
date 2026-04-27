@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.470521",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951281.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951281_restored.jpg",
+      "success": true,
+      "original_size": [
+        784,
+        1200
+      ],
+      "final_size": [
+        3136,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two young girls sitting next to each other in front of a wall",
+      "scenes": [
+        [
+          "portrait photo",
+          0.9628118276596069
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:42:06.401044",
+        "dc:description": "there are two young girls sitting next to each other in front of a wall",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 56.70795750617981,
+      "stage_times": {
+        "super_resolution": 34.67435264587402,
+        "face_enhancement": 12.162455797195435,
+        "colorization": 1.8742234706878662,
+        "analysis": 7.963546514511108
+      },
+      "errors": []
+    }
+  ]
+}

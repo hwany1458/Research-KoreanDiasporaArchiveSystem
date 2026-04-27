@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.443431",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950393.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950393_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        854
+      ],
+      "final_size": [
+        4800,
+        3416
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in front of a white wall",
+      "scenes": [
+        [
+          "family gathering",
+          0.3328554630279541
+        ],
+        [
+          "group photo",
+          0.3181840777397156
+        ],
+        [
+          "family memorial service (jesa)",
+          0.24527685344219208
+        ]
+      ],
+      "face_count": 10,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:56:05.508482",
+        "dc:description": "this is a group of people posing for a picture in front of a white wall",
+        "dc:subject": [
+          "family gathering",
+          "group photo"
+        ],
+        "x:faceCount": 10
+      },
+      "total_time": 75.88834643363953,
+      "stage_times": {
+        "super_resolution": 37.29116773605347,
+        "face_enhancement": 25.467352151870728,
+        "colorization": 1.7013533115386963,
+        "analysis": 11.39422082901001
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.397849",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947083.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11947083_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        411
+      ],
+      "final_size": [
+        4800,
+        1644
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is an old photo of an airplane that is flying in the sky",
+      "scenes": [
+        [
+          "outdoor scene",
+          0.6267026662826538
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:08:30.812741",
+        "dc:description": "there is an old photo of an airplane that is flying in the sky",
+        "dc:subject": [
+          "outdoor scene"
+        ]
+      },
+      "total_time": 6.991260528564453,
+      "stage_times": {
+        "super_resolution": 1.1247100830078125,
+        "face_enhancement": 2.281972646713257,
+        "colorization": 0.49276089668273926,
+        "analysis": 3.074519634246826
+      },
+      "errors": []
+    }
+  ]
+}

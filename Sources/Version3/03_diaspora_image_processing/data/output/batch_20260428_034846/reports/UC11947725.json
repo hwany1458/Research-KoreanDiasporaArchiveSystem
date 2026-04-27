@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-28T05:56:30.405483",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947725.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11947725_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        814
+      ],
+      "final_size": [
+        4800,
+        3256
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a picture of a group of people standing in front of a house",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.40478935837745667
+        ],
+        [
+          "family gathering",
+          0.31497859954833984
+        ],
+        [
+          "group photo",
+          0.11307232826948166
+        ]
+      ],
+      "face_count": 11,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:15:17.623291",
+        "dc:description": "this is a picture of a group of people standing in front of a house",
+        "dc:subject": [
+          "family memorial service (jesa)",
+          "family gathering"
+        ],
+        "x:faceCount": 10
+      },
+      "total_time": 38.9533314704895,
+      "stage_times": {
+        "super_resolution": 19.005350828170776,
+        "face_enhancement": 13.962119340896606,
+        "colorization": 1.023085594177246,
+        "analysis": 4.932460308074951
+      },
+      "errors": []
+    }
+  ]
+}

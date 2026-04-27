@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.431478",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949710.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949710_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        845
+      ],
+      "final_size": [
+        4800,
+        3380
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman sitting at a table together",
+      "scenes": [
+        [
+          "family meal",
+          0.1961449831724167
+        ],
+        [
+          "family memorial service (jesa)",
+          0.15329666435718536
+        ],
+        [
+          "family picnic",
+          0.15245777368545532
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:37:49.865857",
+        "dc:description": "there is a man and a woman sitting at a table together",
+        "x:faceCount": 2
+      },
+      "total_time": 37.31514048576355,
+      "stage_times": {
+        "super_resolution": 22.89617681503296,
+        "face_enhancement": 8.393010377883911,
+        "colorization": 0.9727461338043213,
+        "analysis": 5.0268235206604
+      },
+      "errors": []
+    }
+  ]
+}

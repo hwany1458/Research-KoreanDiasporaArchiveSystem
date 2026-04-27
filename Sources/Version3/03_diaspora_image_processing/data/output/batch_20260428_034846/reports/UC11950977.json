@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.459389",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950977.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950977_restored.jpg",
+      "success": true,
+      "original_size": [
+        795,
+        1200
+      ],
+      "final_size": [
+        3180,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is sitting at a table with a book in front of her",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.4851197898387909
+        ],
+        [
+          "portrait photo",
+          0.14297686517238617
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:22:14.274376",
+        "dc:description": "there is a woman that is sitting at a table with a book in front of her",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 60.75124979019165,
+      "stage_times": {
+        "super_resolution": 36.15288305282593,
+        "face_enhancement": 11.861722946166992,
+        "colorization": 1.826836109161377,
+        "analysis": 10.870992422103882
+      },
+      "errors": []
+    }
+  ]
+}

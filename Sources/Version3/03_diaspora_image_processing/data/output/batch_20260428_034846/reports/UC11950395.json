@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.444428",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950395.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950395_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        941
+      ],
+      "final_size": [
+        4800,
+        3764
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of young men in sports uniforms posing for a picture",
+      "scenes": [
+        [
+          "group photo",
+          0.7348223328590393
+        ],
+        [
+          "family gathering",
+          0.1272936761379242
+        ]
+      ],
+      "face_count": 7,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:57:16.040852",
+        "dc:description": "there is a group of young men in sports uniforms posing for a picture",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 7
+      },
+      "total_time": 70.53004956245422,
+      "stage_times": {
+        "super_resolution": 36.598055362701416,
+        "face_enhancement": 21.8322811126709,
+        "colorization": 1.8822941780090332,
+        "analysis": 10.179039239883423
+      },
+      "errors": []
+    }
+  ]
+}

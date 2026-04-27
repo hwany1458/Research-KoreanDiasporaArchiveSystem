@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.469524",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951276.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951276_restored.jpg",
+      "success": true,
+      "original_size": [
+        786,
+        1200
+      ],
+      "final_size": [
+        3144,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman standing next to each other in front of a house",
+      "scenes": [
+        [
+          "family picnic",
+          0.2763203978538513
+        ],
+        [
+          "family memorial service (jesa)",
+          0.20169275999069214
+        ],
+        [
+          "outdoor scene",
+          0.1130395159125328
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:39:52.439552",
+        "dc:description": "there is a man and a woman standing next to each other in front of a house",
+        "x:faceCount": 2
+      },
+      "total_time": 57.95423126220703,
+      "stage_times": {
+        "super_resolution": 34.58448553085327,
+        "face_enhancement": 12.771447658538818,
+        "colorization": 2.01163911819458,
+        "analysis": 8.557100296020508
+      },
+      "errors": []
+    }
+  ]
+}

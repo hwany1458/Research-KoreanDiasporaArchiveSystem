@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.463881",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951160.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11951160_restored.jpg",
+      "success": true,
+      "original_size": [
+        954,
+        1200
+      ],
+      "final_size": [
+        3816,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is posing for a picture in a dress shirt and tie",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7985897064208984
+        ],
+        [
+          "family memorial service (jesa)",
+          0.16450026631355286
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:30:31.540696",
+        "dc:description": "there is a woman that is posing for a picture in a dress shirt and tie",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 64.39659380912781,
+      "stage_times": {
+        "super_resolution": 40.42949819564819,
+        "face_enhancement": 11.968749046325684,
+        "colorization": 1.7051429748535156,
+        "analysis": 10.257197141647339
+      },
+      "errors": []
+    }
+  ]
+}

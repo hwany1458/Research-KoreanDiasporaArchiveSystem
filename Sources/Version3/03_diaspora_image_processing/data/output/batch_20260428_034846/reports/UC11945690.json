@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.392699",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945690.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11945690_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        717
+      ],
+      "final_size": [
+        4800,
+        2868
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a group of people standing around a small plane",
+      "scenes": [
+        [
+          "group photo",
+          0.4754655361175537
+        ],
+        [
+          "family gathering",
+          0.15852969884872437
+        ],
+        [
+          "outdoor scene",
+          0.1098092719912529
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:04:55.113165",
+        "dc:description": "there is a group of people standing around a small plane",
+        "dc:subject": [
+          "group photo"
+        ]
+      },
+      "total_time": 55.74708294868469,
+      "stage_times": {
+        "super_resolution": 38.46665978431702,
+        "face_enhancement": 3.853694438934326,
+        "colorization": 2.603654623031616,
+        "analysis": 10.794248104095459
+      },
+      "errors": []
+    }
+  ]
+}

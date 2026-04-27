@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.449473",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950610.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950610_restored.jpg",
+      "success": true,
+      "original_size": [
+        727,
+        1200
+      ],
+      "final_size": [
+        2908,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman in wedding attire posing for a picture",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.9536024332046509
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T05:04:49.038944",
+        "dc:description": "there is a man and a woman in wedding attire posing for a picture",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 53.47331690788269,
+      "stage_times": {
+        "super_resolution": 32.937692403793335,
+        "face_enhancement": 10.64988112449646,
+        "colorization": 1.731306791305542,
+        "analysis": 8.125926494598389
+      },
+      "errors": []
+    }
+  ]
+}

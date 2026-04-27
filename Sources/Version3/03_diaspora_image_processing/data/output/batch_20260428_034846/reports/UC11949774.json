@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.431478",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949774.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949774_restored.jpg",
+      "success": true,
+      "original_size": [
+        704,
+        1200
+      ],
+      "final_size": [
+        2816,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a little boy in a coat and hat",
+      "scenes": [
+        [
+          "portrait photo",
+          0.5345029234886169
+        ],
+        [
+          "family trip",
+          0.18166790902614594
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:38:15.993931",
+        "dc:description": "this is an old photo of a little boy in a coat and hat",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 26.130958080291748,
+      "stage_times": {
+        "super_resolution": 15.141993761062622,
+        "face_enhancement": 5.944979190826416,
+        "colorization": 0.8033123016357422,
+        "analysis": 4.205281734466553
+      },
+      "errors": []
+    }
+  ]
+}

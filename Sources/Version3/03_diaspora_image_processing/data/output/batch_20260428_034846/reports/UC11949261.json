@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T05:56:30.420210",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949261.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949261_restored.jpg",
+      "success": true,
+      "original_size": [
+        695,
+        1200
+      ],
+      "final_size": [
+        2780,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three men and a woman posing for a picture on the steps of a house",
+      "scenes": [
+        [
+          "family meal",
+          0.2592189311981201
+        ],
+        [
+          "portrait photo",
+          0.18132157623767853
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1263166069984436
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:28:35.143883",
+        "dc:description": "there are three men and a woman posing for a picture on the steps of a house",
+        "x:faceCount": 3
+      },
+      "total_time": 26.135294198989868,
+      "stage_times": {
+        "super_resolution": 13.531383752822876,
+        "face_enhancement": 7.518372535705566,
+        "colorization": 0.7436947822570801,
+        "analysis": 4.313211441040039
+      },
+      "errors": []
+    }
+  ]
+}

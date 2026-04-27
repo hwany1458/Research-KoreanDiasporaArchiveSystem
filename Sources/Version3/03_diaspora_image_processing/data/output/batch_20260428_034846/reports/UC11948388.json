@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.412408",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948388.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11948388_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        744
+      ],
+      "final_size": [
+        4800,
+        2976
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people that are sitting in the grass",
+      "scenes": [
+        [
+          "family picnic",
+          0.9398736357688904
+        ]
+      ],
+      "face_count": 9,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:21:36.279123",
+        "dc:description": "there is a group of people that are sitting in the grass",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 32.443437576293945,
+      "stage_times": {
+        "super_resolution": 15.41736125946045,
+        "face_enhancement": 11.620152711868286,
+        "colorization": 0.8396227359771729,
+        "analysis": 4.5384440422058105
+      },
+      "errors": []
+    }
+  ]
+}

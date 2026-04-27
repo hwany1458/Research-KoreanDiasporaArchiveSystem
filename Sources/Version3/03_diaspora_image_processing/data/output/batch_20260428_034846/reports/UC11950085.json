@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-28T05:56:30.435806",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950085.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950085_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        1047
+      ],
+      "final_size": [
+        4800,
+        4188
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a black and white drawing of a map with chinese writing on it",
+      "scenes": [
+        [
+          "workplace",
+          0.24969127774238586
+        ],
+        [
+          "school",
+          0.13348808884620667
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:43:36.508333",
+        "dc:description": "there is a black and white drawing of a map with chinese writing on it",
+        "x:faceCount": 3
+      },
+      "total_time": 64.47163701057434,
+      "stage_times": {
+        "super_resolution": 40.050862073898315,
+        "face_enhancement": 11.214691877365112,
+        "colorization": 2.0715596675872803,
+        "analysis": 11.095808982849121
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.389105",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938573.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11938573_restored.jpg",
+      "success": true,
+      "original_size": [
+        817,
+        1200
+      ],
+      "final_size": [
+        3268,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three women and two children sitting on the steps of a building",
+      "scenes": [
+        [
+          "family gathering",
+          0.39775535464286804
+        ],
+        [
+          "family trip",
+          0.18773552775382996
+        ],
+        [
+          "family memorial service (jesa)",
+          0.17908142507076263
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:58:21.621750",
+        "dc:description": "there are three women and two children sitting on the steps of a building",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 67.95399284362793,
+      "stage_times": {
+        "super_resolution": 31.729984998703003,
+        "face_enhancement": 21.801698684692383,
+        "colorization": 2.1334195137023926,
+        "analysis": 12.258873462677002
+      },
+      "errors": []
+    }
+  ]
+}

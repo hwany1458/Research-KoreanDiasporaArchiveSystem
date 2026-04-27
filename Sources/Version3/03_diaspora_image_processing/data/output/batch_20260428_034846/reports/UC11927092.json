@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.388109",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11927092.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11927092_restored.jpg",
+      "success": true,
+      "original_size": [
+        861,
+        1200
+      ],
+      "final_size": [
+        3444,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men that are standing next to each other",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7979345917701721
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T03:56:02.087723",
+        "dc:description": "there are two men that are standing next to each other",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 77.5568380355835,
+      "stage_times": {
+        "super_resolution": 46.34452033042908,
+        "face_enhancement": 16.61425495147705,
+        "colorization": 2.2059223651885986,
+        "analysis": 12.358641147613525
+      },
+      "errors": []
+    }
+  ]
+}

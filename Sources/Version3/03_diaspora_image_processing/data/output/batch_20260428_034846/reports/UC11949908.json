@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.433472",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949908.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11949908_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        959
+      ],
+      "final_size": [
+        4800,
+        3836
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of women dressed in traditional korean clothing posing for a picture",
+      "scenes": [
+        [
+          "group photo",
+          0.885494589805603
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:40:36.312439",
+        "dc:description": "there is a group of women dressed in traditional korean clothing posing for a picture",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 14
+      },
+      "total_time": 46.952792167663574,
+      "stage_times": {
+        "super_resolution": 21.640793561935425,
+        "face_enhancement": 18.360455989837646,
+        "colorization": 1.1916203498840332,
+        "analysis": 5.720664024353027
+      },
+      "errors": []
+    }
+  ]
+}

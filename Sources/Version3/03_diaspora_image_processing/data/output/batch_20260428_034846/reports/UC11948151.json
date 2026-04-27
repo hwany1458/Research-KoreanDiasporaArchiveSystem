@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T05:56:30.410408",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948151.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11948151_restored.jpg",
+      "success": true,
+      "original_size": [
+        980,
+        1200
+      ],
+      "final_size": [
+        3920,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man kneeling down next to a woman in a white dress",
+      "scenes": [
+        [
+          "portrait photo",
+          0.9176582098007202
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:19:50.591501",
+        "dc:description": "there is a man kneeling down next to a woman in a white dress",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 38.753629207611084,
+      "stage_times": {
+        "super_resolution": 21.97105574607849,
+        "face_enhancement": 9.879592418670654,
+        "colorization": 1.0582756996154785,
+        "analysis": 5.812283992767334
+      },
+      "errors": []
+    }
+  ]
+}

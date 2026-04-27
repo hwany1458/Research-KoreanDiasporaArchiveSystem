@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T05:56:30.441436",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950287.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950287_restored.jpg",
+      "success": true,
+      "original_size": [
+        1184,
+        1200
+      ],
+      "final_size": [
+        4736,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two young children holding hands on the side of the street",
+      "scenes": [
+        [
+          "street scene",
+          0.5076872110366821
+        ],
+        [
+          "portrait photo",
+          0.24286775290966034
+        ],
+        [
+          "outdoor scene",
+          0.1423799842596054
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:51:15.742289",
+        "dc:description": "there are two young children holding hands on the side of the street",
+        "dc:subject": [
+          "street scene"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 74.77536082267761,
+      "stage_times": {
+        "super_resolution": 45.38759469985962,
+        "face_enhancement": 15.660147190093994,
+        "colorization": 1.8596479892730713,
+        "analysis": 11.826802253723145
+      },
+      "errors": []
+    }
+  ]
+}

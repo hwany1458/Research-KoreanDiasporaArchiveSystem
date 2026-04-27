@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T05:56:30.441436",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950340.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260428_034846\\restored\\UC11950340_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        866
+      ],
+      "final_size": [
+        4800,
+        3464
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a family posing for a picture in front of a house",
+      "scenes": [
+        [
+          "family gathering",
+          0.49294495582580566
+        ],
+        [
+          "family trip",
+          0.18732254207134247
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T04:52:09.127092",
+        "dc:description": "this is an old photo of a family posing for a picture in front of a house",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 53.37724232673645,
+      "stage_times": {
+        "super_resolution": 34.764336347579956,
+        "face_enhancement": 8.973352193832397,
+        "colorization": 1.8156957626342773,
+        "analysis": 7.780338764190674
+      },
+      "errors": []
+    }
+  ]
+}
