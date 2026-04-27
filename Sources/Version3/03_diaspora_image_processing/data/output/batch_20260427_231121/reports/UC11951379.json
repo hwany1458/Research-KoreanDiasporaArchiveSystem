@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T00:09:16.184702",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951379.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951379_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        792
+      ],
+      "final_size": [
+        4800,
+        3168
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are four asian women in white shirts posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.6869577169418335
+        ],
+        [
+          "group photo",
+          0.13149158656597137
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:02:47.511839",
+        "dc:description": "there are four asian women in white shirts posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 68.94581270217896,
+      "stage_times": {
+        "super_resolution": 35.8178505897522,
+        "face_enhancement": 19.74237322807312,
+        "colorization": 2.1971027851104736,
+        "analysis": 11.160596132278442
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.181650",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951253.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951253_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        800
+      ],
+      "final_size": [
+        4800,
+        3200
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a lot of people that are sitting at a picnic table",
+      "scenes": [
+        [
+          "family picnic",
+          0.9160482883453369
+        ]
+      ],
+      "face_count": 10,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:58:41.830995",
+        "dc:description": "there are a lot of people that are sitting at a picnic table",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 6
+      },
+      "total_time": 90.961510181427,
+      "stage_times": {
+        "super_resolution": 38.96062755584717,
+        "face_enhancement": 37.08860802650452,
+        "colorization": 2.5518345832824707,
+        "analysis": 12.327500581741333
+      },
+      "errors": []
+    }
+  ]
+}

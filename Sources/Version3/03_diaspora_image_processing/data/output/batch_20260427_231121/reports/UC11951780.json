@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.187692",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951780.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951780_restored.jpg",
+      "success": true,
+      "original_size": [
+        923,
+        1200
+      ],
+      "final_size": [
+        3692,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "a black and white photo of a letter from a man to a woman",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.8360430002212524
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:08:05.677053",
+        "dc:description": "a black and white photo of a letter from a man to a woman",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ]
+      },
+      "total_time": 67.07850337028503,
+      "stage_times": {
+        "super_resolution": 49.43157339096069,
+        "face_enhancement": 4.978085517883301,
+        "colorization": 2.562819004058838,
+        "analysis": 10.080427646636963
+      },
+      "errors": []
+    }
+  ]
+}

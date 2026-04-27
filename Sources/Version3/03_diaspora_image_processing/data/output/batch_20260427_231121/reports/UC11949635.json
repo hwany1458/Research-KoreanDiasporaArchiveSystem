@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-28T00:09:16.171464",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949635.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949635_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        822
+      ],
+      "final_size": [
+        4800,
+        3288
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "colorization: 이미 컬러 이미지 - 컬러 이미지 (채도=0.280)"
+      ],
+      "caption": "there are a group of people standing next to each other in a room",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.9616985321044922
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:39:55.571235",
+        "dc:description": "there are a group of people standing next to each other in a room",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 57.913492918014526,
+      "stage_times": {
+        "super_resolution": 23.05890917778015,
+        "face_enhancement": 22.078588724136353,
+        "colorization": 0.08951926231384277,
+        "analysis": 12.645233631134033
+      },
+      "errors": []
+    }
+  ]
+}

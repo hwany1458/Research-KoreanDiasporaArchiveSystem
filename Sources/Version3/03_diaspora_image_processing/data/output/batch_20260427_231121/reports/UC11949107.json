@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.167141",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949107.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949107_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        807
+      ],
+      "final_size": [
+        4800,
+        3228
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "three men and a woman sitting next to each other in front of a pillar",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.625529408454895
+        ],
+        [
+          "family gathering",
+          0.13363711535930634
+        ],
+        [
+          "family meal",
+          0.10780708491802216
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:32:27.675131",
+        "dc:description": "three men and a woman sitting next to each other in front of a pillar",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 70.69185471534729,
+      "stage_times": {
+        "super_resolution": 39.80683207511902,
+        "face_enhancement": 18.59194326400757,
+        "colorization": 1.9719946384429932,
+        "analysis": 10.288334369659424
+      },
+      "errors": []
+    }
+  ]
+}

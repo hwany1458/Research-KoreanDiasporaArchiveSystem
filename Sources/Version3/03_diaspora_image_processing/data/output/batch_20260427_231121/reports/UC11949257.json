@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.169249",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949257.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949257_restored.jpg",
+      "success": true,
+      "original_size": [
+        876,
+        1200
+      ],
+      "final_size": [
+        3504,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is walking a dog on a leash",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7751497030258179
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:35:53.735747",
+        "dc:description": "there is a woman that is walking a dog on a leash",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 68.57382345199585,
+      "stage_times": {
+        "super_resolution": 44.45525240898132,
+        "face_enhancement": 10.86771821975708,
+        "colorization": 2.096189022064209,
+        "analysis": 11.11439561843872
+      },
+      "errors": []
+    }
+  ]
+}

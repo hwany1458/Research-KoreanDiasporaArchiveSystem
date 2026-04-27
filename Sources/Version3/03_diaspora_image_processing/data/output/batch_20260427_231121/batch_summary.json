@@ -1,0 +1,2648 @@
+{
+  "generated_at": "2026-04-28T00:09:16.188689",
+  "total_images": 52,
+  "successful": 52,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\KADA-Edwinlee091.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\KADA-Edwinlee091_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        844
+      ],
+      "final_size": [
+        4800,
+        3376
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in a restaurant",
+      "scenes": [
+        [
+          "family meal",
+          0.363505482673645
+        ],
+        [
+          "group photo",
+          0.2360345870256424
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1969432532787323
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:12:53.991358",
+        "dc:description": "this is a group of people posing for a picture in a restaurant",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 15
+      },
+      "total_time": 88.05837154388428,
+      "stage_times": {
+        "super_resolution": 1.9398765563964844,
+        "face_enhancement": 47.25033640861511,
+        "colorization": 2.809816598892212,
+        "analysis": 12.034722566604614
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11906884.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11906884_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        845
+      ],
+      "final_size": [
+        4800,
+        3380
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people holding up signs at a protest",
+      "scenes": [
+        [
+          "street scene",
+          0.4692332148551941
+        ],
+        [
+          "outdoor scene",
+          0.2861212491989136
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:13:51.998668",
+        "dc:description": "there is a group of people holding up signs at a protest",
+        "dc:subject": [
+          "street scene"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 58.00058054924011,
+      "stage_times": {
+        "super_resolution": 23.95930051803589,
+        "face_enhancement": 20.44636845588684,
+        "colorization": 2.145768404006958,
+        "analysis": 11.414897918701172
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11910349.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11910349_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        716
+      ],
+      "final_size": [
+        4800,
+        2864
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people that are standing together holding a flag",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.7937107086181641
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:14:56.763269",
+        "dc:description": "there is a group of people that are standing together holding a flag",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 64.76237988471985,
+      "stage_times": {
+        "super_resolution": 32.65994954109192,
+        "face_enhancement": 19.3403160572052,
+        "colorization": 1.923825740814209,
+        "analysis": 10.801115036010742
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938503.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11938503_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        805
+      ],
+      "final_size": [
+        4800,
+        3220
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.3756404221057892
+        ],
+        [
+          "birthday party",
+          0.2356281876564026
+        ],
+        [
+          "outdoor scene",
+          0.1248643696308136
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:16:13.201531",
+        "dc:description": "##oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 76.43139100074768,
+      "stage_times": {
+        "super_resolution": 37.24056839942932,
+        "face_enhancement": 14.397937536239624,
+        "colorization": 2.0746517181396484,
+        "analysis": 22.681591272354126
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938573.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11938573_restored.jpg",
+      "success": true,
+      "original_size": [
+        817,
+        1200
+      ],
+      "final_size": [
+        3268,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three women and two children posing for a picture in front of a door",
+      "scenes": [
+        [
+          "family gathering",
+          0.4030524492263794
+        ],
+        [
+          "family trip",
+          0.1846333146095276
+        ],
+        [
+          "family memorial service (jesa)",
+          0.17922326922416687
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:17:21.910746",
+        "dc:description": "there are three women and two children posing for a picture in front of a door",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 68.69595170021057,
+      "stage_times": {
+        "super_resolution": 32.76205372810364,
+        "face_enhancement": 20.848652601242065,
+        "colorization": 2.249774932861328,
+        "analysis": 12.807163953781128
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938635.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11938635_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        839
+      ],
+      "final_size": [
+        4800,
+        3356
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a group of people that are standing in front of a car",
+      "scenes": [
+        [
+          "family picnic",
+          0.48538488149642944
+        ],
+        [
+          "family trip",
+          0.20672598481178284
+        ],
+        [
+          "family gathering",
+          0.15276196599006653
+        ]
+      ],
+      "face_count": 9,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:18:29.321396",
+        "dc:description": "there are a group of people that are standing in front of a car",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 8
+      },
+      "total_time": 67.40683794021606,
+      "stage_times": {
+        "super_resolution": 23.525022268295288,
+        "face_enhancement": 29.31665849685669,
+        "colorization": 2.1159520149230957,
+        "analysis": 12.41709566116333
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11944424.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11944424_restored.jpg",
+      "success": true,
+      "original_size": [
+        719,
+        1200
+      ],
+      "final_size": [
+        2876,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in uniform standing in front of a house",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7730572819709778
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:19:30.862451",
+        "dc:description": "this is an old photo of a man in uniform standing in front of a house",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 61.53416419029236,
+      "stage_times": {
+        "super_resolution": 36.13510823249817,
+        "face_enhancement": 10.919350385665894,
+        "colorization": 1.9527270793914795,
+        "analysis": 12.496148109436035
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945302.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11945302_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        748
+      ],
+      "final_size": [
+        4800,
+        2992
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are four men standing in front of an airplane in a field",
+      "scenes": [
+        [
+          "group photo",
+          0.7447060942649841
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:20:39.688911",
+        "dc:description": "there are four men standing in front of an airplane in a field",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 68.82135391235352,
+      "stage_times": {
+        "super_resolution": 36.36628770828247,
+        "face_enhancement": 18.59210991859436,
+        "colorization": 2.199679374694824,
+        "analysis": 11.629071950912476
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945669.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11945669_restored.jpg",
+      "success": true,
+      "original_size": [
+        641,
+        1200
+      ],
+      "final_size": [
+        2564,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in a suit and tie",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8466044664382935
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:21:33.254565",
+        "dc:description": "this is an old photo of a man in a suit and tie",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 53.566482067108154,
+      "stage_times": {
+        "super_resolution": 32.402814626693726,
+        "face_enhancement": 7.916723728179932,
+        "colorization": 1.9200539588928223,
+        "analysis": 11.28687572479248
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11946509.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11946509_restored.jpg",
+      "success": true,
+      "original_size": [
+        812,
+        1200
+      ],
+      "final_size": [
+        3248,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "this is an old photo of a man sitting on a bench",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7077656388282776
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:22:21.105355",
+        "dc:description": "this is an old photo of a man sitting on a bench",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 47.83790993690491,
+      "stage_times": {
+        "super_resolution": 29.86336851119995,
+        "face_enhancement": 4.221636533737183,
+        "colorization": 2.4435853958129883,
+        "analysis": 11.277362823486328
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947372.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947372_restored.jpg",
+      "success": true,
+      "original_size": [
+        734,
+        1200
+      ],
+      "final_size": [
+        2936,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man that is holding a baseball bat in front of a plane",
+      "scenes": [
+        [
+          "portrait photo",
+          0.6408904194831848
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:23:12.133194",
+        "dc:description": "there is a man that is holding a baseball bat in front of a plane",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 51.018723011016846,
+      "stage_times": {
+        "super_resolution": 34.77793073654175,
+        "face_enhancement": 3.849440336227417,
+        "colorization": 2.048935890197754,
+        "analysis": 10.316351413726807
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947398.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947398_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        703
+      ],
+      "final_size": [
+        4800,
+        2812
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there are many planes that are parked in the dirt",
+      "scenes": [
+        [
+          "outdoor scene",
+          0.7263298034667969
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:23:51.872745",
+        "dc:description": "there are many planes that are parked in the dirt",
+        "dc:subject": [
+          "outdoor scene"
+        ]
+      },
+      "total_time": 39.74057650566101,
+      "stage_times": {
+        "super_resolution": 25.637668132781982,
+        "face_enhancement": 3.75699520111084,
+        "colorization": 1.8384783267974854,
+        "analysis": 8.47726821899414
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947457.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947457_restored.jpg",
+      "success": true,
+      "original_size": [
+        862,
+        1200
+      ],
+      "final_size": [
+        3448,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man and a woman sitting in a field",
+      "scenes": [
+        [
+          "family gathering",
+          0.3191038966178894
+        ],
+        [
+          "family picnic",
+          0.22344619035720825
+        ],
+        [
+          "group photo",
+          0.14822199940681458
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:25:00.900245",
+        "dc:description": "this is an old photo of a man and a woman sitting in a field",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 69.03688478469849,
+      "stage_times": {
+        "super_resolution": 46.2913134098053,
+        "face_enhancement": 9.89804744720459,
+        "colorization": 1.9126100540161133,
+        "analysis": 10.89191222190857
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947511.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947511_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        970
+      ],
+      "final_size": [
+        4800,
+        3880
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman shaking hands in front of a group of people",
+      "scenes": [
+        [
+          "portrait photo",
+          0.25613778829574585
+        ],
+        [
+          "family gathering",
+          0.24563045799732208
+        ],
+        [
+          "group photo",
+          0.23210757970809937
+        ]
+      ],
+      "face_count": 11,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:26:38.197154",
+        "dc:description": "there is a man and a woman shaking hands in front of a group of people",
+        "x:faceCount": 7
+      },
+      "total_time": 97.28568482398987,
+      "stage_times": {
+        "super_resolution": 51.00593280792236,
+        "face_enhancement": 32.782049894332886,
+        "colorization": 2.131842851638794,
+        "analysis": 11.327720403671265
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947645.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947645_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        816
+      ],
+      "final_size": [
+        4800,
+        3264
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three women that are sitting on the ground with a dog",
+      "scenes": [
+        [
+          "group photo",
+          0.49571534991264343
+        ],
+        [
+          "family picnic",
+          0.2428869754076004
+        ],
+        [
+          "outdoor scene",
+          0.10061813145875931
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:27:37.172468",
+        "dc:description": "there are three women that are sitting on the ground with a dog",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 58.96731376647949,
+      "stage_times": {
+        "super_resolution": 30.020700454711914,
+        "face_enhancement": 16.883660793304443,
+        "colorization": 1.9884486198425293,
+        "analysis": 10.034773349761963
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947870.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947870_restored.jpg",
+      "success": true,
+      "original_size": [
+        722,
+        1200
+      ],
+      "final_size": [
+        2888,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men standing next to each other near a tree",
+      "scenes": [
+        [
+          "portrait photo",
+          0.5756779909133911
+        ],
+        [
+          "street scene",
+          0.13100233674049377
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:28:34.967731",
+        "dc:description": "there are two men standing next to each other near a tree",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 57.781710624694824,
+      "stage_times": {
+        "super_resolution": 33.89682865142822,
+        "face_enhancement": 11.252283334732056,
+        "colorization": 2.0208191871643066,
+        "analysis": 10.579321146011353
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948459.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11948459_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        835
+      ],
+      "final_size": [
+        4800,
+        3340
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture at a formal event",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.328916996717453
+        ],
+        [
+          "family gathering",
+          0.25966283679008484
+        ],
+        [
+          "group photo",
+          0.19319039583206177
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:30:08.988515",
+        "dc:description": "this is a group of people posing for a picture at a formal event",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 14
+      },
+      "total_time": 94.02692341804504,
+      "stage_times": {
+        "super_resolution": 28.094698905944824,
+        "face_enhancement": 50.156494140625,
+        "colorization": 2.3012733459472656,
+        "analysis": 13.431942701339722
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948983.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11948983_restored.jpg",
+      "success": true,
+      "original_size": [
+        723,
+        1200
+      ],
+      "final_size": [
+        2892,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a little girl wearing a pink dress and a pink bow on her head",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8371170163154602
+        ],
+        [
+          "baby's first birthday (doljanchi)",
+          0.1482251137495041
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:31:16.979406",
+        "dc:description": "there is a little girl wearing a pink dress and a pink bow on her head",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 67.96991300582886,
+      "stage_times": {
+        "super_resolution": 42.80097031593323,
+        "face_enhancement": 12.380023717880249,
+        "colorization": 2.0716168880462646,
+        "analysis": 10.688559770584106
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949107.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949107_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        807
+      ],
+      "final_size": [
+        4800,
+        3228
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "three men and a woman sitting next to each other in front of a pillar",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.625529408454895
+        ],
+        [
+          "family gathering",
+          0.13363711535930634
+        ],
+        [
+          "family meal",
+          0.10780708491802216
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:32:27.675131",
+        "dc:description": "three men and a woman sitting next to each other in front of a pillar",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 70.69185471534729,
+      "stage_times": {
+        "super_resolution": 39.80683207511902,
+        "face_enhancement": 18.59194326400757,
+        "colorization": 1.9719946384429932,
+        "analysis": 10.288334369659424
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949238.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949238_restored.jpg",
+      "success": true,
+      "original_size": [
+        858,
+        1200
+      ],
+      "final_size": [
+        3432,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man and a little girl posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.3326873183250427
+        ],
+        [
+          "family memorial service (jesa)",
+          0.20389162003993988
+        ],
+        [
+          "family picnic",
+          0.1777895987033844
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:33:42.550752",
+        "dc:description": "this is an old photo of a man and a little girl posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 74.88421726226807,
+      "stage_times": {
+        "super_resolution": 47.17074465751648,
+        "face_enhancement": 14.134496450424194,
+        "colorization": 2.127694845199585,
+        "analysis": 11.4042329788208
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949239.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949239_restored.jpg",
+      "success": true,
+      "original_size": [
+        733,
+        1200
+      ],
+      "final_size": [
+        2932,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man, woman and child posing for a picture",
+      "scenes": [
+        [
+          "family trip",
+          0.4344135820865631
+        ],
+        [
+          "family memorial service (jesa)",
+          0.19340701401233673
+        ],
+        [
+          "family gathering",
+          0.1435377597808838
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:34:45.165543",
+        "dc:description": "this is an old photo of a man, woman and child posing for a picture",
+        "dc:subject": [
+          "family trip"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 62.590351581573486,
+      "stage_times": {
+        "super_resolution": 35.0349485874176,
+        "face_enhancement": 13.703221082687378,
+        "colorization": 2.0094892978668213,
+        "analysis": 11.81290078163147
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949257.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949257_restored.jpg",
+      "success": true,
+      "original_size": [
+        876,
+        1200
+      ],
+      "final_size": [
+        3504,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman that is walking a dog on a leash",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7751497030258179
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:35:53.735747",
+        "dc:description": "there is a woman that is walking a dog on a leash",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 68.57382345199585,
+      "stage_times": {
+        "super_resolution": 44.45525240898132,
+        "face_enhancement": 10.86771821975708,
+        "colorization": 2.096189022064209,
+        "analysis": 11.11439561843872
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949317.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949317_restored.jpg",
+      "success": true,
+      "original_size": [
+        833,
+        1200
+      ],
+      "final_size": [
+        3332,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a family posing for a picture",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.3121850788593292
+        ],
+        [
+          "family picnic",
+          0.2220604121685028
+        ],
+        [
+          "family gathering",
+          0.1275407075881958
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:36:48.488115",
+        "dc:description": "this is an old photo of a family posing for a picture",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 54.74248027801514,
+      "stage_times": {
+        "super_resolution": 23.830745220184326,
+        "face_enhancement": 19.1403648853302,
+        "colorization": 2.198739528656006,
+        "analysis": 9.5360689163208
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949563.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949563_restored.jpg",
+      "success": true,
+      "original_size": [
+        829,
+        1200
+      ],
+      "final_size": [
+        3316,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and woman standing next to each other in front of a house",
+      "scenes": [
+        [
+          "portrait photo",
+          0.4327395260334015
+        ],
+        [
+          "outdoor scene",
+          0.17218180000782013
+        ],
+        [
+          "family memorial service (jesa)",
+          0.13980723917484283
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:37:42.987907",
+        "dc:description": "there is a man and woman standing next to each other in front of a house",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 54.48941445350647,
+      "stage_times": {
+        "super_resolution": 24.335493564605713,
+        "face_enhancement": 16.20723295211792,
+        "colorization": 2.1398441791534424,
+        "analysis": 11.772826433181763
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949598.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949598_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        812
+      ],
+      "final_size": [
+        4800,
+        3248
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men and a woman standing next to each other in front of a group of people",
+      "scenes": [
+        [
+          "birthday party",
+          0.2568560540676117
+        ],
+        [
+          "family gathering",
+          0.15942442417144775
+        ],
+        [
+          "family memorial service (jesa)",
+          0.15009625256061554
+        ]
+      ],
+      "face_count": 6,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:38:57.658226",
+        "dc:description": "there are two men and a woman standing next to each other in front of a group of people",
+        "x:faceCount": 5
+      },
+      "total_time": 74.66238760948181,
+      "stage_times": {
+        "super_resolution": 33.28101325035095,
+        "face_enhancement": 25.161092519760132,
+        "colorization": 2.181311845779419,
+        "analysis": 14.00631833076477
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949635.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949635_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        822
+      ],
+      "final_size": [
+        4800,
+        3288
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "colorization: 이미 컬러 이미지 - 컬러 이미지 (채도=0.280)"
+      ],
+      "caption": "there are a group of people standing next to each other in a room",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.9616985321044922
+        ]
+      ],
+      "face_count": 5,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:39:55.571235",
+        "dc:description": "there are a group of people standing next to each other in a room",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 57.913492918014526,
+      "stage_times": {
+        "super_resolution": 23.05890917778015,
+        "face_enhancement": 22.078588724136353,
+        "colorization": 0.08951926231384277,
+        "analysis": 12.645233631134033
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949636.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949636_restored.jpg",
+      "success": true,
+      "original_size": [
+        669,
+        1200
+      ],
+      "final_size": [
+        2676,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a little girl that are sitting on a bench",
+      "scenes": [
+        [
+          "family picnic",
+          0.3051811754703522
+        ],
+        [
+          "outdoor scene",
+          0.16524416208267212
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1619293987751007
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:40:54.876695",
+        "dc:description": "there is a man and a little girl that are sitting on a bench",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 59.28547787666321,
+      "stage_times": {
+        "super_resolution": 32.90071630477905,
+        "face_enhancement": 13.237154960632324,
+        "colorization": 2.1036205291748047,
+        "analysis": 11.018704891204834
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949934.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949934_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        837
+      ],
+      "final_size": [
+        4800,
+        3348
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three little girls that are standing together in the grass",
+      "scenes": [
+        [
+          "family picnic",
+          0.47544166445732117
+        ],
+        [
+          "portrait photo",
+          0.24481575191020966
+        ],
+        [
+          "group photo",
+          0.16274096071720123
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:41:49.559156",
+        "dc:description": "there are three little girls that are standing together in the grass",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 54.69269847869873,
+      "stage_times": {
+        "super_resolution": 24.32881450653076,
+        "face_enhancement": 17.722736358642578,
+        "colorization": 2.046048879623413,
+        "analysis": 10.553221464157104
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950093.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950093_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        925
+      ],
+      "final_size": [
+        4800,
+        3700
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three men sitting on a couch in front of a painting",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.46582120656967163
+        ],
+        [
+          "family gathering",
+          0.1988021284341812
+        ],
+        [
+          "group photo",
+          0.13033410906791687
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:43:08.935237",
+        "dc:description": "there are three men sitting on a couch in front of a painting",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 79.36014318466187,
+      "stage_times": {
+        "super_resolution": 48.40067791938782,
+        "face_enhancement": 17.812347412109375,
+        "colorization": 2.0562491416931152,
+        "analysis": 11.060312986373901
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950287.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950287_restored.jpg",
+      "success": true,
+      "original_size": [
+        1184,
+        1200
+      ],
+      "final_size": [
+        4736,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two young children holding hands on the side of the street",
+      "scenes": [
+        [
+          "street scene",
+          0.5066520571708679
+        ],
+        [
+          "portrait photo",
+          0.24536989629268646
+        ],
+        [
+          "outdoor scene",
+          0.14109960198402405
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:44:14.299402",
+        "dc:description": "there are two young children holding hands on the side of the street",
+        "dc:subject": [
+          "street scene"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 65.36752367019653,
+      "stage_times": {
+        "super_resolution": 34.42200255393982,
+        "face_enhancement": 17.090588808059692,
+        "colorization": 2.3371121883392334,
+        "analysis": 11.476780891418457
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950395.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950395_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        941
+      ],
+      "final_size": [
+        4800,
+        3764
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of young men in sports uniforms posing for a picture",
+      "scenes": [
+        [
+          "group photo",
+          0.7322201728820801
+        ],
+        [
+          "family gathering",
+          0.12560999393463135
+        ]
+      ],
+      "face_count": 7,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:45:42.074938",
+        "dc:description": "there is a group of young men in sports uniforms posing for a picture",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 7
+      },
+      "total_time": 87.76555371284485,
+      "stage_times": {
+        "super_resolution": 50.05688405036926,
+        "face_enhancement": 24.937217235565186,
+        "colorization": 2.305053949356079,
+        "analysis": 10.426173210144043
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950610.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950610_restored.jpg",
+      "success": true,
+      "original_size": [
+        727,
+        1200
+      ],
+      "final_size": [
+        2908,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman in wedding attire posing for a picture",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.9539576768875122
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:46:53.395056",
+        "dc:description": "there is a man and a woman in wedding attire posing for a picture",
+        "dc:subject": [
+          "wedding ceremony"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 71.29829716682434,
+      "stage_times": {
+        "super_resolution": 43.20376014709473,
+        "face_enhancement": 15.130562543869019,
+        "colorization": 2.1602702140808105,
+        "analysis": 10.777540683746338
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950642.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950642_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        855
+      ],
+      "final_size": [
+        4800,
+        3420
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a group of people posing for a picture in front of a building",
+      "scenes": [
+        [
+          "wedding ceremony",
+          0.4993829131126404
+        ],
+        [
+          "family memorial service (jesa)",
+          0.33303338289260864
+        ],
+        [
+          "family gathering",
+          0.12336099147796631
+        ]
+      ],
+      "face_count": 12,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:48:38.842950",
+        "dc:description": "there is a group of people posing for a picture in front of a building",
+        "dc:subject": [
+          "wedding ceremony",
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 12
+      },
+      "total_time": 105.45051217079163,
+      "stage_times": {
+        "super_resolution": 54.65813493728638,
+        "face_enhancement": 37.6817364692688,
+        "colorization": 2.018002986907959,
+        "analysis": 11.057995557785034
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950651.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950651_restored.jpg",
+      "success": true,
+      "original_size": [
+        988,
+        1200
+      ],
+      "final_size": [
+        3952,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a digital painting of a young boy wearing a bow tie",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7755898237228394
+        ],
+        [
+          "baby's first birthday (doljanchi)",
+          0.21386057138442993
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:49:34.776240",
+        "dc:description": "there is a digital painting of a young boy wearing a bow tie",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 55.92308306694031,
+      "stage_times": {
+        "super_resolution": 30.900221347808838,
+        "face_enhancement": 10.158201217651367,
+        "colorization": 2.3656022548675537,
+        "analysis": 12.466973066329956
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950724.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950724_restored.jpg",
+      "success": true,
+      "original_size": [
+        809,
+        1200
+      ],
+      "final_size": [
+        3236,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and two women standing next to an old car",
+      "scenes": [
+        [
+          "street scene",
+          0.22826114296913147
+        ],
+        [
+          "family memorial service (jesa)",
+          0.22307813167572021
+        ],
+        [
+          "portrait photo",
+          0.13487008213996887
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:50:44.109958",
+        "dc:description": "there is a man and two women standing next to an old car",
+        "x:faceCount": 3
+      },
+      "total_time": 69.32615256309509,
+      "stage_times": {
+        "super_resolution": 38.57352685928345,
+        "face_enhancement": 17.200042009353638,
+        "colorization": 2.0658700466156006,
+        "analysis": 11.455390453338623
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950992.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950992_restored.jpg",
+      "success": true,
+      "original_size": [
+        772,
+        1200
+      ],
+      "final_size": [
+        3088,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a family posing for a picture",
+      "scenes": [
+        [
+          "family gathering",
+          0.2545185685157776
+        ],
+        [
+          "portrait photo",
+          0.2247648388147354
+        ],
+        [
+          "family trip",
+          0.14450038969516754
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:51:51.278842",
+        "dc:description": "this is an old photo of a family posing for a picture",
+        "x:faceCount": 4
+      },
+      "total_time": 67.19082021713257,
+      "stage_times": {
+        "super_resolution": 35.384791135787964,
+        "face_enhancement": 18.510085582733154,
+        "colorization": 2.1236953735351562,
+        "analysis": 11.11207628250122
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951010.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951010_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        750
+      ],
+      "final_size": [
+        4800,
+        3000
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three men standing next to each other on the beach",
+      "scenes": [
+        [
+          "group photo",
+          0.5920326113700867
+        ],
+        [
+          "family trip",
+          0.16566723585128784
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:52:57.417713",
+        "dc:description": "there are three men standing next to each other on the beach",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 66.1012532711029,
+      "stage_times": {
+        "super_resolution": 36.59185862541199,
+        "face_enhancement": 16.592825412750244,
+        "colorization": 2.472724676132202,
+        "analysis": 10.413695573806763
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951085.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951085_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        987
+      ],
+      "final_size": [
+        4800,
+        3948
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men standing next to each other in front of a crowd",
+      "scenes": [
+        [
+          "graduation ceremony",
+          0.4555214047431946
+        ],
+        [
+          "portrait photo",
+          0.18667730689048767
+        ],
+        [
+          "family memorial service (jesa)",
+          0.18315675854682922
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:53:55.412206",
+        "dc:description": "there are two men standing next to each other in front of a crowd",
+        "dc:subject": [
+          "graduation ceremony"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 57.98838973045349,
+      "stage_times": {
+        "super_resolution": 30.24382972717285,
+        "face_enhancement": 12.811163187026978,
+        "colorization": 2.0736265182495117,
+        "analysis": 12.829228639602661
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951204.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951204_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        903
+      ],
+      "final_size": [
+        4800,
+        3612
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man in a pilot ' s uniform",
+      "scenes": [
+        [
+          "portrait photo",
+          0.4455778896808624
+        ],
+        [
+          "family memorial service (jesa)",
+          0.15740811824798584
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:55:06.483511",
+        "dc:description": "this is an old photo of a man in a pilot ' s uniform",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 71.07463359832764,
+      "stage_times": {
+        "super_resolution": 45.557143449783325,
+        "face_enhancement": 10.815571069717407,
+        "colorization": 2.364900827407837,
+        "analysis": 12.29462742805481
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951222.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951222_restored.jpg",
+      "success": true,
+      "original_size": [
+        744,
+        1200
+      ],
+      "final_size": [
+        2976,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a suit and tie standing next to a chair",
+      "scenes": [
+        [
+          "portrait photo",
+          0.9821699261665344
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:56:05.217974",
+        "dc:description": "there is a man in a suit and tie standing next to a chair",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 58.71374034881592,
+      "stage_times": {
+        "super_resolution": 33.244049310684204,
+        "face_enhancement": 12.117421627044678,
+        "colorization": 2.308309555053711,
+        "analysis": 11.013674259185791
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951229.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951229_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        690
+      ],
+      "final_size": [
+        4800,
+        2760
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman standing in front of a table with a cake on it",
+      "scenes": [
+        [
+          "family meal",
+          0.5673808455467224
+        ],
+        [
+          "family picnic",
+          0.19266052544116974
+        ],
+        [
+          "family gathering",
+          0.13071243464946747
+        ]
+      ],
+      "face_count": 8,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:57:10.868951",
+        "dc:description": "there is a woman standing in front of a table with a cake on it",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 6
+      },
+      "total_time": 65.64301300048828,
+      "stage_times": {
+        "super_resolution": 25.729880571365356,
+        "face_enhancement": 25.43740224838257,
+        "colorization": 2.3073923587799072,
+        "analysis": 12.140091180801392
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951253.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951253_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        800
+      ],
+      "final_size": [
+        4800,
+        3200
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a lot of people that are sitting at a picnic table",
+      "scenes": [
+        [
+          "family picnic",
+          0.9160482883453369
+        ]
+      ],
+      "face_count": 10,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:58:41.830995",
+        "dc:description": "there are a lot of people that are sitting at a picnic table",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 6
+      },
+      "total_time": 90.961510181427,
+      "stage_times": {
+        "super_resolution": 38.96062755584717,
+        "face_enhancement": 37.08860802650452,
+        "colorization": 2.5518345832824707,
+        "analysis": 12.327500581741333
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951265.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951265_restored.jpg",
+      "success": true,
+      "original_size": [
+        784,
+        1200
+      ],
+      "final_size": [
+        3136,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a family posing in front of a horse drawn carriage",
+      "scenes": [
+        [
+          "group photo",
+          0.29726627469062805
+        ],
+        [
+          "portrait photo",
+          0.26324230432510376
+        ],
+        [
+          "family gathering",
+          0.12054134160280228
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:59:50.642362",
+        "dc:description": "this is an old photo of a family posing in front of a horse drawn carriage",
+        "x:faceCount": 4
+      },
+      "total_time": 68.80456018447876,
+      "stage_times": {
+        "super_resolution": 35.386622190475464,
+        "face_enhancement": 18.400363206863403,
+        "colorization": 2.1712570190429688,
+        "analysis": 12.813022375106812
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951272.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951272_restored.jpg",
+      "success": true,
+      "original_size": [
+        753,
+        1200
+      ],
+      "final_size": [
+        3012,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a cartoon drawing of a man on top of a pile of books with a hose attached to it",
+      "scenes": [
+        [
+          "workplace",
+          0.420771062374115
+        ],
+        [
+          "portrait photo",
+          0.1948331892490387
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:00:46.449319",
+        "dc:description": "there is a cartoon drawing of a man on top of a pile of books with a hose attached to it",
+        "dc:subject": [
+          "workplace"
+        ]
+      },
+      "total_time": 55.79728078842163,
+      "stage_times": {
+        "super_resolution": 35.23960757255554,
+        "face_enhancement": 3.9558897018432617,
+        "colorization": 2.5259344577789307,
+        "analysis": 14.046955823898315
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951334.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951334_restored.jpg",
+      "success": true,
+      "original_size": [
+        760,
+        1200
+      ],
+      "final_size": [
+        3040,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man that is standing in the grass with a frisbee",
+      "scenes": [
+        [
+          "portrait photo",
+          0.32014816999435425
+        ],
+        [
+          "street scene",
+          0.2188190221786499
+        ],
+        [
+          "outdoor scene",
+          0.18945516645908356
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:01:38.554097",
+        "dc:description": "there is a man that is standing in the grass with a frisbee",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 52.10979747772217,
+      "stage_times": {
+        "super_resolution": 33.96563911437988,
+        "face_enhancement": 3.952547550201416,
+        "colorization": 2.194586753845215,
+        "analysis": 11.95946979522705
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951379.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951379_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        792
+      ],
+      "final_size": [
+        4800,
+        3168
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are four asian women in white shirts posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.6869577169418335
+        ],
+        [
+          "group photo",
+          0.13149158656597137
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:02:47.511839",
+        "dc:description": "there are four asian women in white shirts posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 68.94581270217896,
+      "stage_times": {
+        "super_resolution": 35.8178505897522,
+        "face_enhancement": 19.74237322807312,
+        "colorization": 2.1971027851104736,
+        "analysis": 11.160596132278442
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951654.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951654_restored.jpg",
+      "success": true,
+      "original_size": [
+        843,
+        1200
+      ],
+      "final_size": [
+        3372,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a picture of a picture of a family of three",
+      "scenes": [
+        [
+          "portrait photo",
+          0.2815897762775421
+        ],
+        [
+          "family gathering",
+          0.25317150354385376
+        ],
+        [
+          "family trip",
+          0.17732499539852142
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:03:43.346221",
+        "dc:description": "this is a picture of a picture of a family of three",
+        "x:faceCount": 4
+      },
+      "total_time": 55.838274002075195,
+      "stage_times": {
+        "super_resolution": 22.446446895599365,
+        "face_enhancement": 19.38861060142517,
+        "colorization": 2.2472517490386963,
+        "analysis": 11.717075109481812
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951684.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951684_restored.jpg",
+      "success": true,
+      "original_size": [
+        843,
+        1200
+      ],
+      "final_size": [
+        3372,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two people that are sitting at a table with papers",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.8214471340179443
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:04:35.713342",
+        "dc:description": "there are two people that are sitting at a table with papers",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 52.353962421417236,
+      "stage_times": {
+        "super_resolution": 22.73000955581665,
+        "face_enhancement": 15.535634994506836,
+        "colorization": 2.1758575439453125,
+        "analysis": 11.879394292831421
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951712.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951712_restored.jpg",
+      "success": true,
+      "original_size": [
+        767,
+        1200
+      ],
+      "final_size": [
+        3068,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man in a military uniform posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.819712221622467
+        ],
+        [
+          "family memorial service (jesa)",
+          0.11746466159820557
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:05:37.430977",
+        "dc:description": "there is a man in a military uniform posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 61.70566940307617,
+      "stage_times": {
+        "super_resolution": 35.891080379486084,
+        "face_enhancement": 12.025846719741821,
+        "colorization": 2.1108875274658203,
+        "analysis": 11.649129390716553
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951744.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951744_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        844
+      ],
+      "final_size": [
+        4800,
+        3376
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in a restaurant",
+      "scenes": [
+        [
+          "family meal",
+          0.35359105467796326
+        ],
+        [
+          "group photo",
+          0.2377672642469406
+        ],
+        [
+          "family memorial service (jesa)",
+          0.20219191908836365
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:06:58.574138",
+        "dc:description": "this is a group of people posing for a picture in a restaurant",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 15
+      },
+      "total_time": 81.15273785591125,
+      "stage_times": {
+        "super_resolution": 23.25196886062622,
+        "face_enhancement": 43.973461627960205,
+        "colorization": 2.050858497619629,
+        "analysis": 11.832709312438965
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951780.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951780_restored.jpg",
+      "success": true,
+      "original_size": [
+        923,
+        1200
+      ],
+      "final_size": [
+        3692,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "a black and white photo of a letter from a man to a woman",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.8360430002212524
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:08:05.677053",
+        "dc:description": "a black and white photo of a letter from a man to a woman",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ]
+      },
+      "total_time": 67.07850337028503,
+      "stage_times": {
+        "super_resolution": 49.43157339096069,
+        "face_enhancement": 4.978085517883301,
+        "colorization": 2.562819004058838,
+        "analysis": 10.080427646636963
+      },
+      "errors": []
+    },
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11952034.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11952034_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        799
+      ],
+      "final_size": [
+        4800,
+        3196
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man holding a flag in front of a group of people",
+      "scenes": [
+        [
+          "street scene",
+          0.5828843712806702
+        ],
+        [
+          "outdoor scene",
+          0.104257732629776
+        ],
+        [
+          "family gathering",
+          0.10055612772703171
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:09:02.039933",
+        "dc:description": "there is a man holding a flag in front of a group of people",
+        "dc:subject": [
+          "street scene"
+        ]
+      },
+      "total_time": 56.36579179763794,
+      "stage_times": {
+        "super_resolution": 37.69360017776489,
+        "face_enhancement": 4.256442546844482,
+        "colorization": 2.6231155395507812,
+        "analysis": 11.760387420654297
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T00:09:16.165873",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11948983.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11948983_restored.jpg",
+      "success": true,
+      "original_size": [
+        723,
+        1200
+      ],
+      "final_size": [
+        2892,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a little girl wearing a pink dress and a pink bow on her head",
+      "scenes": [
+        [
+          "portrait photo",
+          0.8371170163154602
+        ],
+        [
+          "baby's first birthday (doljanchi)",
+          0.1482251137495041
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:31:16.979406",
+        "dc:description": "there is a little girl wearing a pink dress and a pink bow on her head",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 67.96991300582886,
+      "stage_times": {
+        "super_resolution": 42.80097031593323,
+        "face_enhancement": 12.380023717880249,
+        "colorization": 2.0716168880462646,
+        "analysis": 10.688559770584106
+      },
+      "errors": []
+    }
+  ]
+}

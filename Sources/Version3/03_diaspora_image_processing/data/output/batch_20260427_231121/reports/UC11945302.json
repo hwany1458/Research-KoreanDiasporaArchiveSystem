@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.161066",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11945302.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11945302_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        748
+      ],
+      "final_size": [
+        4800,
+        2992
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are four men standing in front of an airplane in a field",
+      "scenes": [
+        [
+          "group photo",
+          0.7447060942649841
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:20:39.688911",
+        "dc:description": "there are four men standing in front of an airplane in a field",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 5
+      },
+      "total_time": 68.82135391235352,
+      "stage_times": {
+        "super_resolution": 36.36628770828247,
+        "face_enhancement": 18.59210991859436,
+        "colorization": 2.199679374694824,
+        "analysis": 11.629071950912476
+      },
+      "errors": []
+    }
+  ]
+}

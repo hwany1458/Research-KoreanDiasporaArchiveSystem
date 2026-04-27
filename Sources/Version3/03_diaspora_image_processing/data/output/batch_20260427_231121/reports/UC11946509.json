@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.161066",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11946509.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11946509_restored.jpg",
+      "success": true,
+      "original_size": [
+        812,
+        1200
+      ],
+      "final_size": [
+        3248,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "this is an old photo of a man sitting on a bench",
+      "scenes": [
+        [
+          "portrait photo",
+          0.7077656388282776
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:22:21.105355",
+        "dc:description": "this is an old photo of a man sitting on a bench",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 47.83790993690491,
+      "stage_times": {
+        "super_resolution": 29.86336851119995,
+        "face_enhancement": 4.221636533737183,
+        "colorization": 2.4435853958129883,
+        "analysis": 11.277362823486328
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T00:09:16.163503",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947511.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947511_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        970
+      ],
+      "final_size": [
+        4800,
+        3880
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a woman shaking hands in front of a group of people",
+      "scenes": [
+        [
+          "portrait photo",
+          0.25613778829574585
+        ],
+        [
+          "family gathering",
+          0.24563045799732208
+        ],
+        [
+          "group photo",
+          0.23210757970809937
+        ]
+      ],
+      "face_count": 11,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:26:38.197154",
+        "dc:description": "there is a man and a woman shaking hands in front of a group of people",
+        "x:faceCount": 7
+      },
+      "total_time": 97.28568482398987,
+      "stage_times": {
+        "super_resolution": 51.00593280792236,
+        "face_enhancement": 32.782049894332886,
+        "colorization": 2.131842851638794,
+        "analysis": 11.327720403671265
+      },
+      "errors": []
+    }
+  ]
+}

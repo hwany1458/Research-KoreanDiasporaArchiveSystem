@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.158907",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938573.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11938573_restored.jpg",
+      "success": true,
+      "original_size": [
+        817,
+        1200
+      ],
+      "final_size": [
+        3268,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three women and two children posing for a picture in front of a door",
+      "scenes": [
+        [
+          "family gathering",
+          0.4030524492263794
+        ],
+        [
+          "family trip",
+          0.1846333146095276
+        ],
+        [
+          "family memorial service (jesa)",
+          0.17922326922416687
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:17:21.910746",
+        "dc:description": "there are three women and two children posing for a picture in front of a door",
+        "dc:subject": [
+          "family gathering"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 68.69595170021057,
+      "stage_times": {
+        "super_resolution": 32.76205372810364,
+        "face_enhancement": 20.848652601242065,
+        "colorization": 2.249774932861328,
+        "analysis": 12.807163953781128
+      },
+      "errors": []
+    }
+  ]
+}

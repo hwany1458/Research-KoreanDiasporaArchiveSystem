@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.164665",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947645.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947645_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        816
+      ],
+      "final_size": [
+        4800,
+        3264
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three women that are sitting on the ground with a dog",
+      "scenes": [
+        [
+          "group photo",
+          0.49571534991264343
+        ],
+        [
+          "family picnic",
+          0.2428869754076004
+        ],
+        [
+          "outdoor scene",
+          0.10061813145875931
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:27:37.172468",
+        "dc:description": "there are three women that are sitting on the ground with a dog",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 58.96731376647949,
+      "stage_times": {
+        "super_resolution": 30.020700454711914,
+        "face_enhancement": 16.883660793304443,
+        "colorization": 1.9884486198425293,
+        "analysis": 10.034773349761963
+      },
+      "errors": []
+    }
+  ]
+}

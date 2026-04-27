@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.185699",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951684.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951684_restored.jpg",
+      "success": true,
+      "original_size": [
+        843,
+        1200
+      ],
+      "final_size": [
+        3372,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two people that are sitting at a table with papers",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.8214471340179443
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:04:35.713342",
+        "dc:description": "there are two people that are sitting at a table with papers",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 52.353962421417236,
+      "stage_times": {
+        "super_resolution": 22.73000955581665,
+        "face_enhancement": 15.535634994506836,
+        "colorization": 2.1758575439453125,
+        "analysis": 11.879394292831421
+      },
+      "errors": []
+    }
+  ]
+}

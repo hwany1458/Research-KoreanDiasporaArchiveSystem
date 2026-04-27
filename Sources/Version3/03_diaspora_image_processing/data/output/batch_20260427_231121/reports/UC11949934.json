@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.173474",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949934.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949934_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        837
+      ],
+      "final_size": [
+        4800,
+        3348
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three little girls that are standing together in the grass",
+      "scenes": [
+        [
+          "family picnic",
+          0.47544166445732117
+        ],
+        [
+          "portrait photo",
+          0.24481575191020966
+        ],
+        [
+          "group photo",
+          0.16274096071720123
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:41:49.559156",
+        "dc:description": "there are three little girls that are standing together in the grass",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 54.69269847869873,
+      "stage_times": {
+        "super_resolution": 24.32881450653076,
+        "face_enhancement": 17.722736358642578,
+        "colorization": 2.046048879623413,
+        "analysis": 10.553221464157104
+      },
+      "errors": []
+    }
+  ]
+}

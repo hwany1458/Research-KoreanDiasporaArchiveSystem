@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.158907",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11938635.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11938635_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        839
+      ],
+      "final_size": [
+        4800,
+        3356
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are a group of people that are standing in front of a car",
+      "scenes": [
+        [
+          "family picnic",
+          0.48538488149642944
+        ],
+        [
+          "family trip",
+          0.20672598481178284
+        ],
+        [
+          "family gathering",
+          0.15276196599006653
+        ]
+      ],
+      "face_count": 9,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:18:29.321396",
+        "dc:description": "there are a group of people that are standing in front of a car",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 8
+      },
+      "total_time": 67.40683794021606,
+      "stage_times": {
+        "super_resolution": 23.525022268295288,
+        "face_enhancement": 29.31665849685669,
+        "colorization": 2.1159520149230957,
+        "analysis": 12.41709566116333
+      },
+      "errors": []
+    }
+  ]
+}

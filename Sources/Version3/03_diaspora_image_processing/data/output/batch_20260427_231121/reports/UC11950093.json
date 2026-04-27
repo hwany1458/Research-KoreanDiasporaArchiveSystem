@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.173474",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950093.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950093_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        925
+      ],
+      "final_size": [
+        4800,
+        3700
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three men sitting on a couch in front of a painting",
+      "scenes": [
+        [
+          "family memorial service (jesa)",
+          0.46582120656967163
+        ],
+        [
+          "family gathering",
+          0.1988021284341812
+        ],
+        [
+          "group photo",
+          0.13033410906791687
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:43:08.935237",
+        "dc:description": "there are three men sitting on a couch in front of a painting",
+        "dc:subject": [
+          "family memorial service (jesa)"
+        ],
+        "x:faceCount": 4
+      },
+      "total_time": 79.36014318466187,
+      "stage_times": {
+        "super_resolution": 48.40067791938782,
+        "face_enhancement": 17.812347412109375,
+        "colorization": 2.0562491416931152,
+        "analysis": 11.060312986373901
+      },
+      "errors": []
+    }
+  ]
+}

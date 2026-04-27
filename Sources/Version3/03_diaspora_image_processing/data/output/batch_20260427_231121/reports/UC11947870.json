@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T00:09:16.164665",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947870.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947870_restored.jpg",
+      "success": true,
+      "original_size": [
+        722,
+        1200
+      ],
+      "final_size": [
+        2888,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men standing next to each other near a tree",
+      "scenes": [
+        [
+          "portrait photo",
+          0.5756779909133911
+        ],
+        [
+          "street scene",
+          0.13100233674049377
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:28:34.967731",
+        "dc:description": "there are two men standing next to each other near a tree",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 57.781710624694824,
+      "stage_times": {
+        "super_resolution": 33.89682865142822,
+        "face_enhancement": 11.252283334732056,
+        "colorization": 2.0208191871643066,
+        "analysis": 10.579321146011353
+      },
+      "errors": []
+    }
+  ]
+}

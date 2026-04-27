@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-28T00:09:16.179106",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951010.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951010_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        750
+      ],
+      "final_size": [
+        4800,
+        3000
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are three men standing next to each other on the beach",
+      "scenes": [
+        [
+          "group photo",
+          0.5920326113700867
+        ],
+        [
+          "family trip",
+          0.16566723585128784
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:52:57.417713",
+        "dc:description": "there are three men standing next to each other on the beach",
+        "dc:subject": [
+          "group photo"
+        ],
+        "x:faceCount": 3
+      },
+      "total_time": 66.1012532711029,
+      "stage_times": {
+        "super_resolution": 36.59185862541199,
+        "face_enhancement": 16.592825412750244,
+        "colorization": 2.472724676132202,
+        "analysis": 10.413695573806763
+      },
+      "errors": []
+    }
+  ]
+}

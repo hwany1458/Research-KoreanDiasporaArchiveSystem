@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-04-27T22:58:37.099896",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\family01.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_225720\\restored\\family01_restored.jpg",
+      "success": true,
+      "original_size": [
+        2678,
+        2008
+      ],
+      "final_size": [
+        2678,
+        2008
+      ],
+      "stages_applied": [
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "super_resolution: 메모리 안전 임계값 초과 (입력 2678x2008 = 5.4MP, 4배 후 86.0MP > 24.0MP)"
+      ],
+      "caption": "there is a man and a woman standing on a beach next to the ocean",
+      "scenes": [
+        [
+          "family trip",
+          0.36677929759025574
+        ],
+        [
+          "family memorial service (jesa)",
+          0.24011847376823425
+        ],
+        [
+          "portrait photo",
+          0.12165339291095734
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T22:57:50.292172",
+        "dc:description": "there is a man and a woman standing on a beach next to the ocean",
+        "dc:subject": [
+          "family trip"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 25.37247657775879,
+      "stage_times": {
+        "super_resolution": 0.0,
+        "face_enhancement": 3.431239128112793,
+        "colorization": 0.6611788272857666,
+        "analysis": 2.067591667175293
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.183705",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951334.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951334_restored.jpg",
+      "success": true,
+      "original_size": [
+        760,
+        1200
+      ],
+      "final_size": [
+        3040,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man that is standing in the grass with a frisbee",
+      "scenes": [
+        [
+          "portrait photo",
+          0.32014816999435425
+        ],
+        [
+          "street scene",
+          0.2188190221786499
+        ],
+        [
+          "outdoor scene",
+          0.18945516645908356
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:01:38.554097",
+        "dc:description": "there is a man that is standing in the grass with a frisbee",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 52.10979747772217,
+      "stage_times": {
+        "super_resolution": 33.96563911437988,
+        "face_enhancement": 3.952547550201416,
+        "colorization": 2.194586753845215,
+        "analysis": 11.95946979522705
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.162333",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947372.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947372_restored.jpg",
+      "success": true,
+      "original_size": [
+        734,
+        1200
+      ],
+      "final_size": [
+        2936,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there is a man that is holding a baseball bat in front of a plane",
+      "scenes": [
+        [
+          "portrait photo",
+          0.6408904194831848
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:23:12.133194",
+        "dc:description": "there is a man that is holding a baseball bat in front of a plane",
+        "dc:subject": [
+          "portrait photo"
+        ]
+      },
+      "total_time": 51.018723011016846,
+      "stage_times": {
+        "super_resolution": 34.77793073654175,
+        "face_enhancement": 3.849440336227417,
+        "colorization": 2.048935890197754,
+        "analysis": 10.316351413726807
+      },
+      "errors": []
+    }
+  ]
+}

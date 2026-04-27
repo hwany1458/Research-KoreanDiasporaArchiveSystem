@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.172465",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949636.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949636_restored.jpg",
+      "success": true,
+      "original_size": [
+        669,
+        1200
+      ],
+      "final_size": [
+        2676,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and a little girl that are sitting on a bench",
+      "scenes": [
+        [
+          "family picnic",
+          0.3051811754703522
+        ],
+        [
+          "outdoor scene",
+          0.16524416208267212
+        ],
+        [
+          "family memorial service (jesa)",
+          0.1619293987751007
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:40:54.876695",
+        "dc:description": "there is a man and a little girl that are sitting on a bench",
+        "dc:subject": [
+          "family picnic"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 59.28547787666321,
+      "stage_times": {
+        "super_resolution": 32.90071630477905,
+        "face_enhancement": 13.237154960632324,
+        "colorization": 2.1036205291748047,
+        "analysis": 11.018704891204834
+      },
+      "errors": []
+    }
+  ]
+}

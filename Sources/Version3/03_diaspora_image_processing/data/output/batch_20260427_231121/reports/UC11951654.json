@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T00:09:16.185699",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951654.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951654_restored.jpg",
+      "success": true,
+      "original_size": [
+        843,
+        1200
+      ],
+      "final_size": [
+        3372,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a picture of a picture of a family of three",
+      "scenes": [
+        [
+          "portrait photo",
+          0.2815897762775421
+        ],
+        [
+          "family gathering",
+          0.25317150354385376
+        ],
+        [
+          "family trip",
+          0.17732499539852142
+        ]
+      ],
+      "face_count": 4,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-28T00:03:43.346221",
+        "dc:description": "this is a picture of a picture of a family of three",
+        "x:faceCount": 4
+      },
+      "total_time": 55.838274002075195,
+      "stage_times": {
+        "super_resolution": 22.446446895599365,
+        "face_enhancement": 19.38861060142517,
+        "colorization": 2.2472517490386963,
+        "analysis": 11.717075109481812
+      },
+      "errors": []
+    }
+  ]
+}

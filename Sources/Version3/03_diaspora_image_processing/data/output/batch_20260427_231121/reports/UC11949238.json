@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.168194",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949238.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949238_restored.jpg",
+      "success": true,
+      "original_size": [
+        858,
+        1200
+      ],
+      "final_size": [
+        3432,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man and a little girl posing for a picture",
+      "scenes": [
+        [
+          "portrait photo",
+          0.3326873183250427
+        ],
+        [
+          "family memorial service (jesa)",
+          0.20389162003993988
+        ],
+        [
+          "family picnic",
+          0.1777895987033844
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:33:42.550752",
+        "dc:description": "this is an old photo of a man and a little girl posing for a picture",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 74.88421726226807,
+      "stage_times": {
+        "super_resolution": 47.17074465751648,
+        "face_enhancement": 14.134496450424194,
+        "colorization": 2.127694845199585,
+        "analysis": 11.4042329788208
+      },
+      "errors": []
+    }
+  ]
+}

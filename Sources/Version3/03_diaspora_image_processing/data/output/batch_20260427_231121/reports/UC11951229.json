@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.181650",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951229.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951229_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        690
+      ],
+      "final_size": [
+        4800,
+        2760
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a woman standing in front of a table with a cake on it",
+      "scenes": [
+        [
+          "family meal",
+          0.5673808455467224
+        ],
+        [
+          "family picnic",
+          0.19266052544116974
+        ],
+        [
+          "family gathering",
+          0.13071243464946747
+        ]
+      ],
+      "face_count": 8,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:57:10.868951",
+        "dc:description": "there is a woman standing in front of a table with a cake on it",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 6
+      },
+      "total_time": 65.64301300048828,
+      "stage_times": {
+        "super_resolution": 25.729880571365356,
+        "face_enhancement": 25.43740224838257,
+        "colorization": 2.3073923587799072,
+        "analysis": 12.140091180801392
+      },
+      "errors": []
+    }
+  ]
+}

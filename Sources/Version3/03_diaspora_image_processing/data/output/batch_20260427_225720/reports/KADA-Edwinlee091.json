@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-27T22:58:37.099896",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\KADA-Edwinlee091.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_225720\\restored\\KADA-Edwinlee091_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        844
+      ],
+      "final_size": [
+        4800,
+        3376
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is a group of people posing for a picture in a restaurant",
+      "scenes": [
+        [
+          "family meal",
+          0.36979055404663086
+        ],
+        [
+          "group photo",
+          0.23723721504211426
+        ],
+        [
+          "family memorial service (jesa)",
+          0.18712857365608215
+        ]
+      ],
+      "face_count": 14,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T22:58:16.592356",
+        "dc:description": "this is a group of people posing for a picture in a restaurant",
+        "dc:subject": [
+          "family meal"
+        ],
+        "x:faceCount": 15
+      },
+      "total_time": 26.319575309753418,
+      "stage_times": {
+        "super_resolution": 4.841169118881226,
+        "face_enhancement": 15.607327461242676,
+        "colorization": 0.8373486995697021,
+        "analysis": 4.999048471450806
+      },
+      "errors": []
+    }
+  ]
+}

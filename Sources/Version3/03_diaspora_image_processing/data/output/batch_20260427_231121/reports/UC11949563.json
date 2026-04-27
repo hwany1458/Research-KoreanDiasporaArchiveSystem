@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.170461",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949563.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949563_restored.jpg",
+      "success": true,
+      "original_size": [
+        829,
+        1200
+      ],
+      "final_size": [
+        3316,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and woman standing next to each other in front of a house",
+      "scenes": [
+        [
+          "portrait photo",
+          0.4327395260334015
+        ],
+        [
+          "outdoor scene",
+          0.17218180000782013
+        ],
+        [
+          "family memorial service (jesa)",
+          0.13980723917484283
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:37:42.987907",
+        "dc:description": "there is a man and woman standing next to each other in front of a house",
+        "dc:subject": [
+          "portrait photo"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 54.48941445350647,
+      "stage_times": {
+        "super_resolution": 24.335493564605713,
+        "face_enhancement": 16.20723295211792,
+        "colorization": 2.1398441791534424,
+        "analysis": 11.772826433181763
+      },
+      "errors": []
+    }
+  ]
+}

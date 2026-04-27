@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-04-28T00:09:16.162333",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11947398.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11947398_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        703
+      ],
+      "final_size": [
+        4800,
+        2812
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [
+        "face_enhancement: 얼굴이 감지되지 않음"
+      ],
+      "caption": "there are many planes that are parked in the dirt",
+      "scenes": [
+        [
+          "outdoor scene",
+          0.7263298034667969
+        ]
+      ],
+      "face_count": 0,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:23:51.872745",
+        "dc:description": "there are many planes that are parked in the dirt",
+        "dc:subject": [
+          "outdoor scene"
+        ]
+      },
+      "total_time": 39.74057650566101,
+      "stage_times": {
+        "super_resolution": 25.637668132781982,
+        "face_enhancement": 3.75699520111084,
+        "colorization": 1.8384783267974854,
+        "analysis": 8.47726821899414
+      },
+      "errors": []
+    }
+  ]
+}

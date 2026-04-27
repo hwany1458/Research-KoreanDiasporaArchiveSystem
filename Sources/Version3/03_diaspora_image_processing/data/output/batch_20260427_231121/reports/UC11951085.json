@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.179656",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11951085.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11951085_restored.jpg",
+      "success": true,
+      "original_size": [
+        1200,
+        987
+      ],
+      "final_size": [
+        4800,
+        3948
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there are two men standing next to each other in front of a crowd",
+      "scenes": [
+        [
+          "graduation ceremony",
+          0.4555214047431946
+        ],
+        [
+          "portrait photo",
+          0.18667730689048767
+        ],
+        [
+          "family memorial service (jesa)",
+          0.18315675854682922
+        ]
+      ],
+      "face_count": 1,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:53:55.412206",
+        "dc:description": "there are two men standing next to each other in front of a crowd",
+        "dc:subject": [
+          "graduation ceremony"
+        ],
+        "x:faceCount": 1
+      },
+      "total_time": 57.98838973045349,
+      "stage_times": {
+        "super_resolution": 30.24382972717285,
+        "face_enhancement": 12.811163187026978,
+        "colorization": 2.0736265182495117,
+        "analysis": 12.829228639602661
+      },
+      "errors": []
+    }
+  ]
+}

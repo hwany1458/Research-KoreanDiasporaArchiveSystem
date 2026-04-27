@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-28T00:09:16.168194",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11949239.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11949239_restored.jpg",
+      "success": true,
+      "original_size": [
+        733,
+        1200
+      ],
+      "final_size": [
+        2932,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "this is an old photo of a man, woman and child posing for a picture",
+      "scenes": [
+        [
+          "family trip",
+          0.4344135820865631
+        ],
+        [
+          "family memorial service (jesa)",
+          0.19340701401233673
+        ],
+        [
+          "family gathering",
+          0.1435377597808838
+        ]
+      ],
+      "face_count": 2,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:34:45.165543",
+        "dc:description": "this is an old photo of a man, woman and child posing for a picture",
+        "dc:subject": [
+          "family trip"
+        ],
+        "x:faceCount": 2
+      },
+      "total_time": 62.590351581573486,
+      "stage_times": {
+        "super_resolution": 35.0349485874176,
+        "face_enhancement": 13.703221082687378,
+        "colorization": 2.0094892978668213,
+        "analysis": 11.81290078163147
+      },
+      "errors": []
+    }
+  ]
+}

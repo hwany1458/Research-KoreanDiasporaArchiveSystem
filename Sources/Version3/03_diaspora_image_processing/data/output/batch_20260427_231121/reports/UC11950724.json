@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-28T00:09:16.177004",
+  "total_images": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "input": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\input\\UC11950724.jpg",
+      "output": "C:\\Users\\user\\Downloads\\YouKyoung\\diaspora_thesis_code\\03_diaspora_image_processing\\data\\output\\batch_20260427_231121\\restored\\UC11950724_restored.jpg",
+      "success": true,
+      "original_size": [
+        809,
+        1200
+      ],
+      "final_size": [
+        3236,
+        4800
+      ],
+      "stages_applied": [
+        "super_resolution",
+        "face_enhancement",
+        "colorization",
+        "analysis"
+      ],
+      "stages_skipped": [],
+      "caption": "there is a man and two women standing next to an old car",
+      "scenes": [
+        [
+          "street scene",
+          0.22826114296913147
+        ],
+        [
+          "family memorial service (jesa)",
+          0.22307813167572021
+        ],
+        [
+          "portrait photo",
+          0.13487008213996887
+        ]
+      ],
+      "face_count": 3,
+      "metadata": {
+        "dc:type": "Image",
+        "dc:format": "image/jpeg",
+        "dc:created": "2026-04-27T23:50:44.109958",
+        "dc:description": "there is a man and two women standing next to an old car",
+        "x:faceCount": 3
+      },
+      "total_time": 69.32615256309509,
+      "stage_times": {
+        "super_resolution": 38.57352685928345,
+        "face_enhancement": 17.200042009353638,
+        "colorization": 2.0658700466156006,
+        "analysis": 11.455390453338623
+      },
+      "errors": []
+    }
+  ]
+}
