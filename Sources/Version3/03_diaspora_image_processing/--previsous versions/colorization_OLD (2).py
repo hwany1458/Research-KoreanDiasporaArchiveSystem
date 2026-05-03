@@ -16,23 +16,6 @@ References:
 가중치:
     DDColor   - modelscope: damo/cv_ddcolor_image-colorization (자동 다운로드)
     DeOldify  - https://data.deepai.org/deoldify/ColorizeArtistic_gen.pth
-
-입력 크기 정책 (max_input_dim):
-    DDColor는 내부적으로 저해상도(약 256~512px)에서 색상을 추정한 뒤
-    원본 해상도에 LAB 공간으로 합성하는 구조다. 따라서 SR 결과
-    (4800x3376 등)를 그대로 입력하면 다음 두 가지 문제가 발생할 수 있다:
-    
-    1. 색상 일관성 저하: 입력이 클수록 패치 단위 색상 추정 결과가 영역
-       사이에서 불일치하여 보라/자주색 cast 또는 edge artifact 발생.
-    2. VRAM/처리시간 비효율: 색상 추정과 합성 단계 모두 큰 해상도를
-       다루느라 메모리·시간 낭비.
-    
-    해결: 색상 추정용 입력만 일정 크기 이내로 다운스케일하고, 추정된
-    색상을 원본 해상도의 흑백 이미지에 LAB 공간 ab 채널로 합성한다.
-    L 채널은 원본 SR 결과를 그대로 보존하므로 디테일 손실이 없다.
-    
-    - max_input_dim=1536 (기본): 색상 일관성 양호, 디테일 손실 없음
-    - max_input_dim=None: 다운스케일 없이 입력 그대로 처리 (legacy)
 """
 
 import os
@@ -154,8 +137,7 @@ class ColorizationModule:
         model_path: Optional[str] = None,
         render_factor: int = 35,
         watermark: bool = False,
-        backend: Optional[str] = None,
-        max_input_dim: Optional[int] = 1536
+        backend: Optional[str] = None
     ):
         """
         컬러화 모듈 초기화
@@ -167,22 +149,12 @@ class ColorizationModule:
             render_factor: DeOldify 렌더링 품질 (7-45)
             watermark: DeOldify 워터마크 표시 여부
             backend: 백엔드 강제 지정 ('ddcolor'/'deoldify'/'sepia'/None=자동)
-            max_input_dim: DDColor 적용 시 입력의 최대 변(픽셀).
-                          SR 결과(4800×3376) 같은 거대한 입력에서 색상 일관성이
-                          저하되거나 edge artifact가 발생하는 것을 방지한다.
-                          색상 추정만 다운스케일된 입력으로 수행하고, 추정된
-                          색상을 원본 해상도의 L 채널과 LAB 공간에서 합성하므로
-                          디테일은 보존된다.
-                          - 1536 (기본): 색상 일관성 양호
-                          - None: 다운스케일 없이 입력 그대로 처리 (legacy)
-                          DeOldify에는 적용되지 않는다 (자체 render_factor 사용).
         """
         self.device = self._setup_device(device)
         self.model_type = model_type
         self.render_factor = render_factor
         self.watermark = watermark
         self.model_path = model_path
-        self.max_input_dim = max_input_dim
         
         # 모델 타입 검증
         if model_type not in self.MODELS:
@@ -228,11 +200,6 @@ class ColorizationModule:
         print(f"  - 장치: {self.device}")
         if self.backend == 'ddcolor':
             print(f"  - 주 모델: DDColor (ICCV 2023)")
-            if self.max_input_dim is not None:
-                print(f"  - 입력 크기 제한: 최대 변 {self.max_input_dim}px "
-                      f"(LAB 공간 색상 합성, 디테일 보존)")
-            else:
-                print(f"  - 입력 크기 제한: 없음 (legacy 모드)")
         elif self.backend == 'deoldify':
             print(f"  - 모델 타입: {model_type}")
             print(f"  - 렌더 팩터: {render_factor}")
@@ -461,72 +428,14 @@ class ColorizationModule:
     # 백엔드별 구현
     # ──────────────────────────────────────────────────────────
     def _colorize_with_ddcolor(self, img_bgr: np.ndarray) -> Image.Image:
-        """
-        DDColor를 사용한 컬러화.
-        
-        max_input_dim이 설정된 경우, 거대한 입력(예: SR 결과 4800x3376)에서
-        DDColor의 색상 일관성이 저하되는 것을 방지하기 위해 다음 절차를
-        따른다:
-        
-        1) 입력 다운스케일 → DDColor로 컬러화
-        2) 컬러화 결과를 LAB 공간으로 변환하여 ab(색상) 채널만 추출
-        3) ab 채널을 원본 해상도로 업스케일
-        4) 원본의 L(휘도) 채널 + 업스케일된 ab 채널을 합성하여 BGR로 복원
-        
-        L 채널은 원본 SR 결과를 그대로 보존하므로 4배 업스케일된 디테일이
-        손실되지 않으면서, 색상은 DDColor가 가장 일관되게 추정 가능한
-        해상도(1536px 이하)에서 결정된 결과를 사용한다.
-        """
+        """DDColor를 사용한 컬러화"""
         from modelscope.outputs import OutputKeys
-        
-        original_h, original_w = img_bgr.shape[:2]
-        
-        # ──────────────────────────────────────────────────────────
-        # 다운스케일된 입력으로 DDColor 색상 추정
-        # ──────────────────────────────────────────────────────────
-        img_for_ddcolor = img_bgr
-        downscaled = False
-        
-        if self.max_input_dim is not None:
-            max_dim = max(original_h, original_w)
-            if max_dim > self.max_input_dim:
-                scale = self.max_input_dim / max_dim
-                new_w = int(round(original_w * scale))
-                new_h = int(round(original_h * scale))
-                img_for_ddcolor = cv2.resize(
-                    img_bgr, (new_w, new_h),
-                    interpolation=cv2.INTER_AREA
-                )
-                downscaled = True
         
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            output = self.ddcolor_pipeline(img_for_ddcolor)
+            output = self.ddcolor_pipeline(img_bgr)
         
         output_bgr = output[OutputKeys.OUTPUT_IMG]
-        
-        # ──────────────────────────────────────────────────────────
-        # 다운스케일된 경우: LAB 공간에서 색상만 합성
-        # ──────────────────────────────────────────────────────────
-        if downscaled:
-            # 1) DDColor 결과를 LAB로 변환 → ab 채널 추출
-            small_lab = cv2.cvtColor(output_bgr, cv2.COLOR_BGR2LAB)
-            small_ab = small_lab[:, :, 1:3]  # a, b 채널만
-            
-            # 2) ab 채널을 원본 해상도로 업스케일 (LANCZOS4: 색상 부드럽게)
-            full_ab = cv2.resize(
-                small_ab, (original_w, original_h),
-                interpolation=cv2.INTER_LANCZOS4
-            )
-            
-            # 3) 원본 BGR을 LAB로 변환 → L 채널 보존
-            original_lab = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2LAB)
-            full_l = original_lab[:, :, 0:1]  # 원본 L 채널
-            
-            # 4) 합성: 원본 L + 업스케일된 ab → BGR
-            merged_lab = np.concatenate([full_l, full_ab], axis=2)
-            output_bgr = cv2.cvtColor(merged_lab, cv2.COLOR_LAB2BGR)
-        
         return Image.fromarray(cv2.cvtColor(output_bgr, cv2.COLOR_BGR2RGB))
     
     def _colorize_with_deoldify(

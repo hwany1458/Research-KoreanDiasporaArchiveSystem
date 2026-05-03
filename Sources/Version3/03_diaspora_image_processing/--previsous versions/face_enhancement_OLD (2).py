@@ -21,18 +21,6 @@ GFPGAN을 활용하여 저화질 얼굴 이미지를 복원합니다.
                      파이프라인 일관성과 처리 시간 측면에서 권장.
     upscale=2/4: GFPGAN이 추가 업스케일까지 수행 (legacy 동작).
 
-입력 크기 정책 (max_input_dim):
-    SR 단계가 4배 업스케일을 수행하면 입력이 4800×3376(≈16MP) 이상이 되어
-    GFPGAN 내부의 RetinaFace 검출이 8GB VRAM에서 OOM을 일으킨다.
-    
-    GFPGAN의 얼굴 복원은 어차피 검출된 얼굴을 512×512로 정렬한 후 수행되므로,
-    검출 단계의 입력 해상도가 복원 품질에 미치는 영향은 미미하다.
-    따라서 검출용 입력만 일정 크기 이내로 다운스케일하고, 복원된 결과를
-    다시 원본 해상도로 업스케일하여 합성한다.
-    
-    - max_input_dim=1536 (기본): 8GB VRAM에서 안정적으로 동작
-    - max_input_dim=None: 다운스케일 없이 입력 그대로 처리 (16GB+ VRAM 권장)
-
 알려진 한계:
     GFPGAN은 FFHQ 데이터셋(서양인 위주)으로 학습되어,
     동아시아인 얼굴의 귀 영역에서 과도한 붉은빛(color bias)을 보일 수 있음.
@@ -142,7 +130,6 @@ class FaceEnhancementModule:
         enable_fallback_detector: bool = True,
         always_apply: bool = True,
         bg_tile_size: int = 1024,
-        max_input_dim: Optional[int] = 1536,
         verbose: bool = False
     ):
         """
@@ -159,13 +146,6 @@ class FaceEnhancementModule:
             enable_fallback_detector: True면 HOG 검출기 fallback 활성화
             always_apply: True면 얼굴 검출 시 크기 무관하게 GFPGAN 적용
             bg_tile_size: 배경 업샘플러의 tile 크기 (1024 권장, 0=분할 없음)
-            max_input_dim: GFPGAN 적용 시 입력의 최대 변(픽셀).
-                          SR 결과(4800×3376) 같은 거대한 입력에서 RetinaFace가
-                          OOM을 일으키는 것을 방지한다. 검출 단계만 다운스케일된
-                          입력으로 수행하고, 복원 결과는 원본 해상도로 업스케일된다.
-                          - 1536 (기본): 8GB VRAM에서 안정적 (RTX 4060/4070 Laptop 등)
-                          - 2048 또는 None: 12~16GB+ VRAM 권장
-                          - None: 다운스케일 없이 원본 그대로 처리 (legacy)
             verbose: True면 상세 디버깅 메시지 출력
         """
         if not GFPGAN_AVAILABLE:
@@ -180,7 +160,6 @@ class FaceEnhancementModule:
         )
         self.always_apply = always_apply
         self.bg_tile_size = bg_tile_size
-        self.max_input_dim = max_input_dim
         self.verbose = verbose
         
         # RetinaFace 영구 비활성화 플래그 (한 번 실패하면 더 이상 시도 안 함)
@@ -243,11 +222,6 @@ class FaceEnhancementModule:
               f"{' + HOG fallback' if self.enable_fallback_detector else ''}")
         print(f"  적용 정책: "
               f"{'얼굴 검출 시 크기 무관 적용' if always_apply else 'min_face_size 임계값 기반'}")
-        if max_input_dim is not None:
-            print(f"  입력 크기 제한: 최대 변 {max_input_dim}px "
-                  f"(이를 초과하면 다운스케일 후 GFPGAN 적용, 결과는 원본 해상도로 복원)")
-        else:
-            print(f"  입력 크기 제한: 없음 (16GB+ VRAM 환경)")
     
     def _init_bg_upsampler(self) -> Optional[RealESRGANer]:
         """배경 업샘플러(RealESRGAN x2) 초기화."""
@@ -337,11 +311,6 @@ class FaceEnhancementModule:
         """
         통합 얼굴 검출: RetinaFace 1차 → HOG 2차 fallback.
         
-        max_input_dim이 설정된 경우 검출용 입력을 다운스케일하여
-        거대한 SR 결과 이미지(예: 4800x3376)에서의 OOM을 방지한다.
-        검출 결과 bbox는 어차피 should_process에서 크기 비교 외엔 쓰이지
-        않으므로 좌표 보정은 생략한다.
-        
         Returns:
             (bbox 리스트, 사용된 검출기명)
         """
@@ -354,17 +323,6 @@ class FaceEnhancementModule:
             img = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
         else:
             img = image
-        
-        # 검출용 다운스케일 (메모리 안전)
-        if self.max_input_dim is not None:
-            h, w = img.shape[:2]
-            max_dim = max(h, w)
-            if max_dim > self.max_input_dim:
-                scale = self.max_input_dim / max_dim
-                new_w = int(round(w * scale))
-                new_h = int(round(h * scale))
-                img = cv2.resize(img, (new_w, new_h),
-                                 interpolation=cv2.INTER_AREA)
         
         # 1차: RetinaFace
         faces, retinaface_ok = self._detect_with_retinaface(img)
@@ -448,57 +406,14 @@ class FaceEnhancementModule:
             img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
         
         original_img = img.copy()
-        original_h, original_w = img.shape[:2]
-        
-        # ──────────────────────────────────────────────────────────
-        # 입력 다운스케일 (메모리 안전)
-        # 
-        # GFPGAN은 검출된 얼굴을 512x512로 정렬한 후 복원하므로,
-        # 검출 단계 입력의 해상도가 복원 품질에 미치는 영향은 미미하다.
-        # 거대한 입력(예: SR 결과 4800x3376)을 그대로 GFPGAN에 넣으면
-        # 내부 RetinaFace 검출에서 8GB VRAM이 OOM을 일으킨다.
-        # ──────────────────────────────────────────────────────────
-        img_for_gfpgan = img
-        downscaled = False
-        
-        if self.max_input_dim is not None:
-            max_dim = max(original_h, original_w)
-            if max_dim > self.max_input_dim:
-                scale = self.max_input_dim / max_dim
-                new_w = int(round(original_w * scale))
-                new_h = int(round(original_h * scale))
-                img_for_gfpgan = cv2.resize(
-                    img, (new_w, new_h),
-                    interpolation=cv2.INTER_AREA
-                )
-                downscaled = True
-                if self.verbose:
-                    print(f"  ℹ [face] 다운스케일: "
-                          f"{original_w}x{original_h} → {new_w}x{new_h} "
-                          f"(scale={scale:.3f})")
         
         # GFPGAN 적용
         cropped_faces, restored_faces, restored_img = self.restorer.enhance(
-            img_for_gfpgan,
+            img,
             has_aligned=False,
             only_center_face=only_center_face,
             paste_back=paste_back
         )
-        
-        # ──────────────────────────────────────────────────────────
-        # 다운스케일된 경우 결과를 원본 해상도로 복원
-        # 
-        # 얼굴 외 영역은 SR로 얻은 디테일이 들어 있으므로 원본 이미지를
-        # 우선하고, 얼굴 영역만 GFPGAN 결과를 반영하는 것이 이상적이지만,
-        # GFPGANer.enhance의 paste_back은 단일 이미지 단위로만 동작하므로
-        # 여기서는 LANCZOS 업스케일로 일관성을 유지한다.
-        # 얼굴 외 영역의 SR 디테일 손실 정도는 ablation에서 정량화 가능.
-        # ──────────────────────────────────────────────────────────
-        if restored_img is not None and downscaled:
-            restored_img = cv2.resize(
-                restored_img, (original_w, original_h),
-                interpolation=cv2.INTER_LANCZOS4
-            )
         
         # 결과 변환
         if restored_img is not None:

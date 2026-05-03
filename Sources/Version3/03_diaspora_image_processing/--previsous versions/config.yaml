@@ -1,0 +1,25 @@
+device: cuda
+
+super_resolution:
+  enabled: true
+  model_name: RealESRGAN_x4plus
+  model_path: weights/RealESRGAN_x4plus.pth
+  scale: 4
+  tile: 512
+  tile_pad: 10
+  pre_pad: 0
+  half: true
+
+face_enhancement:
+  enabled: true
+  model_path: weights/GFPGANv1.4.pth
+  upscale: 2
+
+colorization:
+  enabled: true
+  model_path: weights/ColorizeArtistic_gen.pth
+
+analysis:
+  enabled: true
+  blip_model: Salesforce/blip-image-captioning-base
+  clip_model: openai/clip-vit-base-patch32

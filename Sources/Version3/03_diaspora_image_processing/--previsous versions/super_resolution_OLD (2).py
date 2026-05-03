@@ -79,7 +79,7 @@ class SuperResolutionModule:
         device: str = 'cuda',
         model_name: str = 'RealESRGAN_x4plus',
         model_path: Optional[str] = None,
-        tile_size: int = 256,
+        tile_size: int = 1024,
         half_precision: bool = True,
         always_apply: bool = True,
         max_megapixels: float = 24.0

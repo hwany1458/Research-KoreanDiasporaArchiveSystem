@@ -83,11 +83,6 @@ def main():
                         help="조건 무시하고 모든 단계 강제 실행")
     parser.add_argument("--verbose", "-v", action="store_true",
                         help="상세 출력")
-    parser.add_argument("--low-vram", action="store_true",
-                        help="저사양 GPU(8GB 이하) 모드: 단계별로 모듈을 언로드하여 OOM 방지 "
-                             "(처리 시간 다소 증가하지만 RTX 4070 8GB 등에서 전체 파이프라인 동작)")
-    parser.add_argument("--vram-verbose", action="store_true",
-                        help="단계별 VRAM 사용량 출력 (디버그용)")
     
     args = parser.parse_args()
     
@@ -105,21 +100,15 @@ def main():
         enable_colorization=not args.no_color,
         enable_analysis=not args.no_analysis,
         save_intermediate=args.save_intermediate,
-        conditional_execution=not args.force,
-        low_vram_mode=args.low_vram,
-        vram_verbose=args.vram_verbose
+        conditional_execution=not args.force
     )
     
     # 파이프라인 초기화
-    # 버그 수정: 기존 코드는 config.yaml 존재 시 CLI options를 무시(=None 전달)했으나,
-    # 이는 사용자가 --no-color 등 CLI 옵션을 지정해도 무시되는 결과를 초래했다.
-    # 수정 후: CLI options를 항상 전달하고, pipeline._load_config가 yaml과 병합하도록 함.
-    # → CLI 옵션이 yaml 설정보다 우선시되어 사용자 의도가 반영됨.
     try:
         pipeline = ImageRestorationPipeline(
             device=args.device,
             config_path=str(config_path) if config_path else None,
-            options=options,
+            options=options if config_path is None else None,
             lazy_load=True
         )
     except Exception as e:

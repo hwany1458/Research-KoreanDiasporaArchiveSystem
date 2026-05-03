@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Diaspora Image Restoration Pipeline: AI-based Image Restoration for Korean Diaspora Archival Heritage"
+abstract: >-
+  An AI-based image restoration pipeline for Korean diaspora archival
+  heritage. Combines super-resolution (Real-ESRGAN), face enhancement
+  (GFPGAN), colorization (DDColor), and semantic analysis (BLIP+CLIP)
+  with module ordering ablation support and 8GB VRAM compatibility.
+authors:
+  - family-names: "[Family Name]"
+    given-names: "[Given Name]"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "[Affiliation]"
+version: 1.0.0
+date-released: 2026-05-03
+url: "https://github.com/[username]/diaspora-image-pipeline"
+repository-code: "https://github.com/[username]/diaspora-image-pipeline"
+license: MIT
+keywords:
+  - image-restoration
+  - super-resolution
+  - face-restoration
+  - colorization
+  - korean-diaspora
+  - cultural-heritage
+  - ablation-study
+  - deep-learning
+
+# 학위 논문이 정식 출판되면 다음을 업데이트하세요:
+preferred-citation:
+  type: thesis
+  title: "한인 디아스포라 기록유산을 위한 AI 기반 디지털화 및 몰입형 콘텐츠 생성 시스템"
+  authors:
+    - family-names: "[Family Name]"
+      given-names: "[Given Name]"
+  year: 2026
+  thesis-type: "Doctoral Dissertation"
+  institution:
+    name: "[University]"

@@ -26,24 +26,6 @@ batch_process.py
     python batch_process.py --no-comparison  # 비교 이미지 생략 (속도 ↑)
 """
 
-# ============================================================================
-# CUDA 메모리 할당자 환경변수 자동 설정 (PyTorch import 이전 필수)
-# ============================================================================
-# 8GB VRAM 환경(RTX 4070 Laptop 등)에서 일괄 처리 시 발생하는 메모리 단편화
-# 및 cascading OOM을 방지하기 위해, PyTorch의 expandable_segments 메모리
-# 할당자를 활성화한다. 이 설정은 PyTorch가 import될 때 한 번만 읽히므로
-# 반드시 import torch 이전에 설정되어야 한다.
-#
-# expandable_segments:True - 메모리 블록을 동적으로 확장 가능하게 만들어
-#   단편화 누적을 방지. PyTorch 2.1+ 에서 도입된 새 할당자.
-#
-# 사용자가 이미 환경변수를 설정해 둔 경우(예: 시스템 환경변수)에는 그 값을
-# 우선하여 그대로 사용한다. setdefault는 키가 없을 때만 설정한다.
-import os as _os_for_env_setup
-_os_for_env_setup.environ.setdefault(
-    'PYTORCH_CUDA_ALLOC_CONF', 'expandable_segments:True'
-)
-
 import argparse
 import os
 import sys
@@ -339,23 +321,10 @@ def run_batch(
     limit: Optional[int] = None,
     save_comparison: bool = True,
     save_per_image_report: bool = True,
-    verbose: bool = False,
-    low_vram: bool = False,
-    vram_verbose: bool = False
+    verbose: bool = False
 ) -> int:
     """
     일괄 처리 실행.
-    
-    Args:
-        input_dir: 입력 이미지 디렉토리
-        output_dir: 출력 디렉토리
-        device: 'cuda' 또는 'cpu'
-        limit: 최대 처리 이미지 수
-        save_comparison: 비교 이미지 생성 여부
-        save_per_image_report: 개별 JSON 리포트 생성 여부
-        verbose: 상세 로그 출력
-        low_vram: 8GB 이하 GPU 환경에서 단계별 모듈 언로드 활성화
-        vram_verbose: 단계별 VRAM 사용량 출력 (디버그용)
     
     Returns:
         실패한 이미지 수 (종료 코드용; 0이면 모두 성공)
@@ -379,12 +348,6 @@ def run_batch(
     print(f"  입력 디렉토리: {input_dir}")
     print(f"  출력 디렉토리: {output_dir}")
     print(f"  처리 대상   : {len(images)}장")
-    print(f"  연산 장치   : {device}")
-    print(f"  메모리 모드 : {'low_vram (단계별 모듈 언로드)' if low_vram else '기본 (모듈 상주)'}")
-    print(f"  VRAM 출력   : {'활성화' if vram_verbose else '비활성화'}")
-    # CUDA 메모리 할당자 설정 표시 (학위논문 재현성 자료)
-    cuda_alloc_conf = os.environ.get('PYTORCH_CUDA_ALLOC_CONF', '(미설정)')
-    print(f"  CUDA 할당자 : {cuda_alloc_conf}")
     print(f"  비교 이미지 : {'생성' if save_comparison else '스킵'}")
     print(f"  개별 리포트 : {'생성' if save_per_image_report else '스킵'}")
     print("=" * 70)
@@ -393,20 +356,10 @@ def run_batch(
     # 파이프라인 초기화 (모델은 1회만 로드)
     # ──────────────────────────────────────────────────────────
     print("\n[1/3] 파이프라인 초기화...")
-    from src.pipeline import ImageRestorationPipeline, ProcessingOptions
-    
-    # 처리 옵션 구성
-    # low_vram=True 시 각 단계 종료 후 모듈을 메모리에서 언로드한다.
-    # 이는 8GB GPU 환경에서 SR + 얼굴복원 + 컬러화 + 분석을 동시 실행할 때
-    # 누적 OOM을 방지한다. 단점은 매 사진마다 모듈 재로드로 약 5~15초 추가.
-    options = ProcessingOptions(
-        low_vram_mode=low_vram,
-        vram_verbose=vram_verbose
-    )
+    from src.pipeline import ImageRestorationPipeline
     
     pipeline = ImageRestorationPipeline(
         device=device,
-        options=options,
         lazy_load=True
     )
     
@@ -563,8 +516,6 @@ def main():
     python batch_process.py --limit 3
     python batch_process.py --input-dir data/input --verbose
     python batch_process.py --no-comparison    # 비교 이미지 안 만듦 (속도 ↑)
-    python batch_process.py --low-vram         # 8GB GPU 환경 (RTX 4070 등)
-    python batch_process.py --low-vram --vram-verbose  # VRAM 추이 출력
 """
     )
     parser.add_argument('--input-dir', type=str, default='data/input',
@@ -581,11 +532,6 @@ def main():
                         help='개별 JSON 리포트 생성 스킵')
     parser.add_argument('--verbose', '-v', action='store_true',
                         help='상세 로그 출력')
-    parser.add_argument('--low-vram', action='store_true',
-                        help='저사양 GPU(8GB 이하) 모드: 단계별로 모듈을 언로드하여 OOM 방지 '
-                             '(처리 시간 다소 증가하지만 RTX 4070 8GB 등에서 전체 파이프라인 동작)')
-    parser.add_argument('--vram-verbose', action='store_true',
-                        help='단계별 VRAM 사용량 출력 (디버그용; --low-vram 와 함께 사용 권장)')
     
     args = parser.parse_args()
     
@@ -608,8 +554,6 @@ def main():
         save_comparison=not args.no_comparison,
         save_per_image_report=not args.no_report,
         verbose=args.verbose,
-        low_vram=args.low_vram,
-        vram_verbose=args.vram_verbose,
     )
     
     sys.exit(0 if failed_count == 0 else 1)
